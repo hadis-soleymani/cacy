@@ -1,6 +1,10 @@
 /* variables.module.scss */
-$green: rgb(107,140,85);
+$green: rgb(107, 140, 85);
+$light_green: rgb(236, 242, 230);
+$dark_text: #42474b;
 
 :export {
   green: $green;
+  light_green: $light_green;
+  dark_text: $dark_text;
 }

@@ -1,0 +1,34 @@
+@import "variables";
+
+//center content
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//search box input
+@mixin input($width) {
+  width: $width;
+  margin-right: 10px;
+  background-color: $light_green;
+  padding: 10px 10px 10px 30px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  color: rgb(70, 77, 97);
+  transition: width 0.4s ease-in;
+  &:focus {
+    width: 10rem;
+    background-color: #f6f6f6;
+  }
+}
+
+@mixin link_style {
+  font-size: 1rem;
+  color: $dark_text;
+  transition: color 0.2s ease-in;
+  &:hover {
+    color: $green;
+  }
+}
