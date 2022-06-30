@@ -1,6 +1,6 @@
 /* variables.module.scss */
-$primary-color: #64ff00;
+$green: rgb(107,140,85);
 
 :export {
-  primaryColor: $primary-color;
+  green: $green;
 }

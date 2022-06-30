@@ -1,5 +1,17 @@
 @import 'variables';
 
 .container {
- background-color: $primary-color;
+ display: block;
+ height: 10vh;
+ div{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+ }
+}
+
+.nav_right a{
+    padding: 0 10px;
 }
