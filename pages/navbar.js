@@ -7,18 +7,15 @@ import { FiShoppingBag } from "react-icons/fi";
 const Navbar = () => {
   return (
     <header className={styles.header}>
-      <div>
-        <Image src="/logo.svg" alt="logo" width={100} height={100} />
+
+      <div className={styles.card_container}>
+        <div>
+      <FiShoppingBag size={26} color="#fff" />
       </div>
-      <nav className={styles.nav_right}>
-        <Link href="#"> خانه</Link>
-        <Link href="#"> فروشگاه </Link>
-        <Link href="#"> درباره ی ما </Link>
-        <Link href="#"> تماس با ما </Link>
-      </nav>
+      </div>
 
       <nav className={styles.nav_left}>
-        <div className={styles.icon_inside}>
+      <div className={styles.icon_inside}>
           <input type="text" className={styles.input} />
           <AiOutlineSearch size={25} />
         </div>
@@ -27,10 +24,18 @@ const Navbar = () => {
           <option>ورود</option>
         </select>
       </nav>
-      <div className={styles.card_container}>
-        <FiShoppingBag size={22} color="#fff" />
+
+      <nav className={styles.nav_right}>
+      <Link href="#"> خانه</Link>
+        <Link href="#"> فروشگاه </Link>
+        <Link href="#"> درباره ی ما </Link>
+        <Link href="#"> تماس با ما </Link>
+      </nav>
+
+      <div className={styles.logo_container}>
+      <Image src="/logo.svg" alt="logo" width={100} height={100} />
       </div>
     </header>
   );
 };
-export default Navbar
+export default Navbar;
