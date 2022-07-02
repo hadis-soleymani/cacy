@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const Titr = () => {
   return (
-    <div style={{height:'100vh'}}>titr</div>
-  )
-}
+    <div>
+      دسته بندی های فروشگاه
+    </div>
+  );
+};
 
-export default Titr
+export default Titr;

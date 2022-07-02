@@ -37,13 +37,13 @@
 .container main h1 {
   text-align: right;
   font-size: 1.8rem;
-  @include opacity_animation(1s, 0.5s);
+  // @include opacity_animation(1s, 0.5s);
 }
 
 .container main p {
   text-align: right;
   padding-left: 3rem;
-  @include opacity_animation(2s, 0.5s);
+  // @include opacity_animation(2s, 0.5s);
 }
 
 .container main span::after {
