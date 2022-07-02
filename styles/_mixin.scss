@@ -32,3 +32,14 @@
     color: $green;
   }
 }
+
+@mixin button {
+  background-color: $green;
+  line-height: 20px;
+  color:white;
+  height: 40px;
+  width: 8rem;
+  border: none;
+  outline: none;
+  
+}

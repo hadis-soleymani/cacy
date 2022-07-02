@@ -1,7 +1,9 @@
 import Head from 'next/head'
-import { Navbar } from './navbar'
+import Home from './home'
+import  Navbar from './navbar'
 
-export default function Home() {
+
+export default function App() {
   return (
     <div >
       <Head>
@@ -10,6 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar/>
+      <Home/>
     </div>
   )
 }

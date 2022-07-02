@@ -1,0 +1,19 @@
+@import "variables";
+@import "mixin";
+
+.container{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    background-color: aqua;
+    margin-top: 12vh;
+}
+.green_section{
+    width: 30%;
+    background-color: $light_green;
+    height: 60vh;
+    margin-left: 4vw;
+}
+.button{
+    @include button;
+}

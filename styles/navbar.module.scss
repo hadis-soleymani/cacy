@@ -13,6 +13,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 4vw;
+  z-index: 99;
 }
 
 //right navbar
@@ -29,7 +30,7 @@
   padding-right: 10px;
   background-color: $light_green;
   justify-content: flex-end;
-  height: 12vh;
+  height: 160vh;
 }
 
 //select option

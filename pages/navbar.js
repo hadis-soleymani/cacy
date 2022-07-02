@@ -4,7 +4,7 @@ import styles from "../styles/navbar.module.scss";
 import { AiOutlineSearch } from "react-icons/ai";
 import { FiShoppingBag } from "react-icons/fi";
 
-export const Navbar = () => {
+const Navbar = () => {
   return (
     <header className={styles.header}>
       <div>
@@ -33,3 +33,4 @@ export const Navbar = () => {
     </header>
   );
 };
+export default Navbar
