@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Home from './home'
 import  Navbar from './navbar'
+import Titr from './titr'
 
 
 export default function App() {
@@ -12,7 +13,8 @@ export default function App() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar/>
-    
+    <Home/>
+    <Titr/>
     </div>
   )
 }

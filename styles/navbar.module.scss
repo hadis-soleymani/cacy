@@ -7,7 +7,7 @@
   left: 0;
   position: fixed;
   width: 100vw;
-  z-index: 99;
+  
   display: grid;
   grid-template-columns: 4vw repeat(14, 1fr) 4vw;
   grid-template-rows: 12vh;
@@ -55,6 +55,7 @@
 
 //search box
 .input {
+  direction: rtl;
   @include input(4rem);
 }
 .icon_inside {

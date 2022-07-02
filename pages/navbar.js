@@ -15,6 +15,7 @@ const Navbar = () => {
       </div>
 
       <nav className={styles.nav_left}>
+        
       <div className={styles.icon_inside}>
           <input type="text" className={styles.input} />
           <AiOutlineSearch size={25} />
