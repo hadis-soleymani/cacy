@@ -1,10 +1,12 @@
 import React from "react";
+import styles from '../styles/titr.module.scss'
 import ScrollAnimation from "react-animate-on-scroll";
 
-const Titr = () => {
+const Titr = ({title}) => {
   return (
-    <div>
-      دسته بندی های فروشگاه
+    
+    <div className={styles.container}>
+      {title}
     </div>
   );
 };

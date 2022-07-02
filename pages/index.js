@@ -15,7 +15,7 @@ export default function App() {
       </Head>
       <Navbar/>
     <Home/>
-    <Titr/>
+    <Titr title="دسته بندی های فروشگاه"/>
     </div>
   )
 }
