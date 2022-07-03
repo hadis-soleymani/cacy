@@ -4,6 +4,7 @@ $light_green: rgb(236, 242, 230);
 $dark_text: #42474b;
 $gray: rgb(234, 237, 242);
 $pink: rgb(247, 237, 238);
+$product_bg: rgb(243,243,243);
 
 :export {
   green: $green;
@@ -11,4 +12,5 @@ $pink: rgb(247, 237, 238);
   dark_text: $dark_text;
   gray: $gray;
   pink: $pink;
+  product_bg : $product_bg;
 }
