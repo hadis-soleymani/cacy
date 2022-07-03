@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Categories from './categories'
 import Home from './home'
 import  Navbar from './navbar'
 import Titr from './titr'
@@ -16,6 +17,8 @@ export default function App() {
       <Navbar/>
     <Home/>
     <Titr title="دسته بندی های فروشگاه"/>
+    <Categories/>
+    <Titr title="نهال های ما"/>
     </div>
   )
 }

@@ -1,12 +1,13 @@
 import React from "react";
-import styles from '../styles/titr.module.scss'
+import styles from "../styles/titr.module.scss";
 import ScrollAnimation from "react-animate-on-scroll";
 
-const Titr = ({title}) => {
+const Titr = ({ title }) => {
   return (
-    
     <div className={styles.container}>
-      {title}
+      <ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutLeft">
+        {title}
+      </ScrollAnimation>
     </div>
   );
 };
