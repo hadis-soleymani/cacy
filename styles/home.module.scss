@@ -5,12 +5,13 @@
   margin-top: 12vh;
   width: 100vw;
   display: grid;
-  grid-template-columns: 4vw repeat(14, 1fr) 4vw;
+  padding: 0 4vw;
+  grid-template-columns: 1fr 5fr 7fr 1fr;
   grid-template-rows: 70vh;
 }
 
 .green_section {
-  grid-column: 3/8;
+  grid-column: 2/3;
   grid-row: 1/2;
   background-color: $light_green !important;
   position: relative;
@@ -23,7 +24,7 @@
 }
 
 .container main {
-  grid-column: 8 / 16;
+  grid-column: 3/4;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,7 +56,7 @@
 }
 
 @media (max-width: 768px) {
-.container{
-  grid-template-columns: 'main' 'green_section';
-}
+  .container {
+    grid-template-columns: "main" "green_section";
+  }
 }

@@ -5,26 +5,27 @@
 .container{
 width:100vw ;
 display: grid;
+padding: 0 4vw;
 font-size: 0.5rem;
 color: $dark_text;
-grid-template-columns: 4vw  auto auto  4vw;
+grid-template-columns:auto auto ;
 gap: 1.5rem;
 grid-template-rows: 35vh 35vh;
 }
 
 
 .left_card{
-    grid-area: 1 / 2 /3 /3;
+    grid-area: 1 / 1 /3 /2;
     background-color: $light_green;
     @include categori_content;
 }
 .top_card{
-    grid-area: 1 / 3 /2 /4;   
+    grid-area: 1 / 2 /2 /3;   
     background-color:$gray !important;
     @include categori_content;
 }
 .bottom_card{
-    grid-area: 2 / 3 /3 /4;
+    grid-area: 2 / 2 /3 /3;
     background-color: $pink;
     @include categori_content;
 }
