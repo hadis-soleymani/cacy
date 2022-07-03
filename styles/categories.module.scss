@@ -5,10 +5,10 @@
 .container{
 width:100vw ;
 display: grid;
-font-size: 0.8rem;
+font-size: 0.5rem;
 color: $dark_text;
 grid-template-columns: 4vw  auto auto  4vw;
-gap: 1rem;
+gap: 1.5rem;
 grid-template-rows: 35vh 35vh;
 }
 

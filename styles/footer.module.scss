@@ -1,0 +1,42 @@
+@import "variables";
+
+.footer{
+    display: grid;
+    color: $light_text;
+    font-size: 0.8rem;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    background-color: $footer_bg;
+}
+.logo_container{
+    display: flex;
+    justify-content: flex-end;
+    background-color: $footer_bg;
+    padding: 1rem 4rem 0 0;
+}
+.text{
+    padding:8px 2rem 0 2rem ;
+    text-align: right;
+    
+}
+.footer ul{
+    list-style-type: none;
+    text-align: right;
+}
+.footer ul li {
+    padding: 3px 0;
+}
+
+.list{
+    padding: 0 2rem 2rem 0;
+}
+.title_li{
+color: $dark_text;
+font-size: .9rem;
+padding: 8px 0;
+}
+.footer ul a{
+    
+&:hover{
+    color: $green;
+}
+}

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Categories from './categories'
+import Footer from './footer'
 import Home from './home'
 import  Navbar from './navbar'
 import Stote from './stote'
@@ -21,6 +22,7 @@ export default function App() {
     <Categories/>
     <Titr title="نهال های ما"/>
     <Stote/>
+    <Footer/>
     </div>
   )
 }

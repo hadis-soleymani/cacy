@@ -7,10 +7,12 @@
   left: 0;
   position: fixed;
   width: 100vw;
-  
+  background-color: #fff;
+  z-index: 100;
   display: grid;
   grid-template-columns: 4vw repeat(14, 1fr) 4vw;
   grid-template-rows: 12vh;
+  @include boxSadow;
 }
 
 .card_container {
@@ -82,4 +84,10 @@
 .logo_container {
   grid-column: 15/16;
   @include center;
+}
+
+
+@media (max-width:926px) {
+  .nav_right {
+    background-color: aqua};
 }

@@ -14,6 +14,7 @@ const Stote = () => {
         <Product/>
         <Product/>
         <Product/>
+        
     </div>
   )
 }

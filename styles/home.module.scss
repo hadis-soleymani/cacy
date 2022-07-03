@@ -53,3 +53,9 @@
 .button {
   @include button;
 }
+
+@media (max-width: 768px) {
+.container{
+  grid-template-columns: 'main' 'green_section';
+}
+}
