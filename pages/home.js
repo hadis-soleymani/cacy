@@ -30,9 +30,10 @@ const Home = () => {
           <Image
             src="/plant.png"
             alt="plant"
-            layout="responsive"
-            width={400}
-            height={550}
+style={{width:'30vw',height:'auto'}}
+            width={200}
+            height={300}
+            
           />
         </div>
       </div>
