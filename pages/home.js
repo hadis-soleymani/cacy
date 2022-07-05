@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Home = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="خانه">
       <main>
         <ScrollAnimation animateIn="fadeIn">
           <h1>

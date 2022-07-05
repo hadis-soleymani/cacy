@@ -4,7 +4,7 @@ import styles from '../styles/product.module.scss';
 import ScrollAnimation from "react-animate-on-scroll";
 const Stote = () => {
   return (
-    <div className={styles.products_container}>
+    <div className={styles.products_container} id="فروشگاه">
  <ScrollAnimation animateIn="fadeIn">
         <Product/>
         </ScrollAnimation>

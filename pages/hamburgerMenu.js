@@ -3,7 +3,7 @@ import styles from "../styles/navbar.module.scss";
 import { AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 import styled from "styled-components";
-import Link from "next/link";
+import { Link } from "react-scroll";
 
 //styled components
 const Div = styled.div`
@@ -106,9 +106,22 @@ const Div = styled.div`
 `;
 
 const HamburgerMenu = () => {
+  const [clicked, setClicked] = useState({
+    خانه: false,
+    فروشگاه: false,
+    AboutMe: false,
+    Expriences: false,
+    Works: false,
+    Blog: false,
+    ContactUs: false,
+  });
   const [open, setOpen] = useState(false);
   const [first, setFirst] = useState(true);
 
+  const clickedItem = (event) => {
+    setClicked({ [event.target.text]: true });
+    setOpen(!open);
+  };
   const hamburger_open = () => {
     setOpen(!open);
     setFirst(false);
@@ -130,10 +143,20 @@ const HamburgerMenu = () => {
           <AiOutlineClose onClick={hamburger_close} size={"1.5rem"} />
         </div>
         <ul className={styles.hamburger_list} onClick={hamburger_close}>
-          <Link href="#"> خانه</Link>
+          <Link to="خانه" spy={true} onClick={clickedItem} smooth={true}>
+            خانه
+          </Link>
           <Link href="#"> حساب کاربری</Link>
           <Link href="#"> خروج</Link>
-          <Link href="#"> فروشگاه </Link>
+          <Link
+            href="#"
+            to="فروشگاه"
+            spy={true}
+            onClick={clickedItem}
+            smooth={true}
+          >
+            فروشگاه
+          </Link>
           <Link href="#"> درباره ی ما </Link>
           <Link href="#"> تماس با ما </Link>
         </ul>
