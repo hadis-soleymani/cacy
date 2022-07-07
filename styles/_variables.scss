@@ -1,12 +1,13 @@
-/* variables.module.scss */
+/* colors variables */
+
 $green: rgb(107, 140, 85);
 $light_green: rgb(236, 242, 230);
 $dark_text: #42474b;
 $gray: rgb(234, 237, 242);
 $pink: rgb(247, 237, 238);
-$product_bg: rgb(243,243,243);
-$footer_bg: rgb(243,243,243);
-$light_text: rgb(121,121,121);
+$product_bg: rgb(243, 243, 243);
+$footer_bg: rgb(243, 243, 243);
+$light_text: rgb(121, 121, 121);
 
 :export {
   green: $green;
@@ -14,7 +15,7 @@ $light_text: rgb(121,121,121);
   dark_text: $dark_text;
   gray: $gray;
   pink: $pink;
-  product_bg : $product_bg;
-  footer_bg : $footer_bg;
-  light_text:$light_text;
+  product_bg: $product_bg;
+  footer_bg: $footer_bg;
+  light_text: $light_text;
 }

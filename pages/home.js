@@ -1,7 +1,11 @@
 import React from "react";
-import ScrollAnimation from "react-animate-on-scroll";
-import styles from "../styles/home.module.scss";
 import Image from "next/image";
+
+//libraries
+import ScrollAnimation from "react-animate-on-scroll";
+
+//styles
+import styles from "../styles/home.module.scss";
 
 const Home = () => {
   return (
@@ -30,10 +34,9 @@ const Home = () => {
           <Image
             src="/plant.png"
             alt="plant"
-style={{width:'30vw',height:'auto'}}
+            style={{ width: "30vw", height: "auto" }}
             width={200}
             height={300}
-            
           />
         </div>
       </div>

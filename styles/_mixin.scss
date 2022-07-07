@@ -10,7 +10,6 @@
 //search box input
 @mixin input($width) {
   width: $width;
-//margin-right: 10px;
   background-color: $light_green;
   padding: 10px 10px 10px 30px;
   border: none;
@@ -24,6 +23,7 @@
   }
 }
 
+//style for links text
 @mixin link_style {
   font-size: 1rem;
   color: $dark_text;
@@ -33,7 +33,7 @@
   }
 }
 
-//button animate
+//special button with animation
 @mixin button {
   background-color: $green;
   line-height: 20px;

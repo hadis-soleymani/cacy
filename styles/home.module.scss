@@ -1,6 +1,7 @@
 @import "variables";
 @import "mixin";
 
+//home container
 .container {
   margin-top: 6vh;
   width: 100vw;
@@ -10,6 +11,7 @@
   grid-template-rows: 70vh;
 }
 
+//green section container
 .green_section {
   grid-column: 2/3;
   grid-row: 1/2;
@@ -24,6 +26,7 @@
   height: 80%;
 }
 
+//main section library
 .container main {
   grid-column: 3/4;
   display: flex;
@@ -39,30 +42,30 @@
 .container main h1 {
   text-align: right;
   font-size: 1.8rem;
-  // @include opacity_animation(1s, 0.5s);
 }
-
 .container main p {
   text-align: right;
   padding-left: 3rem;
-  // @include opacity_animation(2s, 0.5s);
 }
 
+//create space
 .container main span::after {
   content: " ";
 }
 
+//special button
 .button {
   @include button;
 }
 
+//responsive for tablet
 @media (max-width: 926px) and (min-width: 768px) {
   .container {
     grid-template-rows: 55vh;
   }
 }
 
-
+//responsive for mobile
 @media (max-width: 768px) {
   .container {
     padding: 0;
@@ -70,7 +73,6 @@
     grid-template-columns: auto;
     grid-template-rows: 30vh 50vh;
   }
-
   .green_section {
     grid-column: 1/2;
     grid-row: 1/2;
