@@ -1,3 +1,5 @@
+// note: I add this file to project for styled component library
+
 import Document from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
