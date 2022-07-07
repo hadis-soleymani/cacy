@@ -1,31 +1,46 @@
-import React from 'react'
-import Product from './product'
-import styles from '../styles/product.module.scss';
+//note: products container component
+
+import React from "react";
+
+//components
+import Product from "./product";
+
+//styles
+import styles from "../styles/product.module.scss";
+
+//libraries
 import ScrollAnimation from "react-animate-on-scroll";
+
 const Stote = () => {
   return (
     <div className={styles.products_container} id="فروشگاه">
- <ScrollAnimation animateIn="fadeIn">
-        <Product/>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeIn">
-        <Product/>
-        </ScrollAnimation><ScrollAnimation animateIn="fadeIn">
-        <Product/>
-        </ScrollAnimation><ScrollAnimation animateIn="fadeIn">
-        <Product/>
-        </ScrollAnimation><ScrollAnimation animateIn="fadeIn">
-        <Product/>
-        </ScrollAnimation><ScrollAnimation animateIn="fadeIn">
-        <Product/>
-        </ScrollAnimation><ScrollAnimation animateIn="fadeIn">
-        <Product/>
-        </ScrollAnimation><ScrollAnimation animateIn="fadeIn">
-        <Product/>
-        </ScrollAnimation>
-        
+      {/* call  products card */}
+      <ScrollAnimation animateIn="fadeIn">
+        <Product />
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeIn">
+        <Product />
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeIn">
+        <Product />
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeIn">
+        <Product />
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeIn">
+        <Product />
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeIn">
+        <Product />
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeIn">
+        <Product />
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeIn">
+        <Product />
+      </ScrollAnimation>
     </div>
-  )
-}
+  );
+};
 
-export default Stote
+export default Stote;

@@ -1,5 +1,9 @@
+// note: product card container
+
 import React from "react";
 import Image from "next/image";
+
+//styles
 import styles from "../styles/product.module.scss";
 
 const Product = () => {

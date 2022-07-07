@@ -1,14 +1,16 @@
 @import "variables";
 @import "mixin";
 
+//all products container
 .products_container {
   display: grid;
   column-gap: 1.5rem;
   row-gap: 2rem;
   grid-template-columns: auto auto auto auto;
-  padding:  4vw;
+  padding: 4vw;
 }
 
+//one product style
 .product_container {
   font-size: 30px;
   text-align: center;
@@ -42,16 +44,16 @@
   @include button;
 }
 
+//responsive all products in mobile size
 @media (max-width: 768px) {
-.products_container{
-  grid-template-columns: auto auto ;
+  .products_container {
+    grid-template-columns: auto auto;
+  }
 }
 
-
-}
-
-@media (max-width: 926px)and (min-width: 768px){
-  .products_container{
+//responsive in tablet size
+@media (max-width: 926px) and (min-width: 768px) {
+  .products_container {
     grid-template-columns: auto auto auto;
   }
 }
