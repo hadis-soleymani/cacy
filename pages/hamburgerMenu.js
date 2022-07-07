@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "../styles/navbar.module.scss";
+import styles from "../styles/hamburgerMenu.module.scss";
 import { AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 import styled from "styled-components";
