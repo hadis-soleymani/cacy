@@ -1,7 +1,15 @@
+// note: in this file I create hamburger menu component in mobile size
+
 import React, { useState } from "react";
+
+//styles
 import styles from "../styles/hamburgerMenu.module.scss";
+
+//icons
 import { AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
+
+//libraries
 import styled from "styled-components";
 import { Link } from "react-scroll";
 
@@ -106,6 +114,7 @@ const Div = styled.div`
 `;
 
 const HamburgerMenu = () => {
+  //for scroll with click
   const [clicked, setClicked] = useState({
     خانه: false,
     فروشگاه: false,
@@ -115,18 +124,20 @@ const HamburgerMenu = () => {
     Blog: false,
     ContactUs: false,
   });
+
+  //open and close menu
   const [open, setOpen] = useState(false);
+
+  //for prevent from closing animation at loading time
   const [first, setFirst] = useState(true);
 
   const clickedItem = (event) => {
     setClicked({ [event.target.text]: true });
     setOpen(!open);
   };
-  const hamburger_open = () => {
-    setOpen(!open);
-    setFirst(false);
-  };
-  const hamburger_close = () => {
+
+  //open & close hamburger menu
+  const hamburger_change_state = () => {
     setOpen(!open);
     setFirst(false);
   };
@@ -135,14 +146,18 @@ const HamburgerMenu = () => {
     <>
       <GiHamburgerMenu
         className={styles.hamburger_icon}
-        onClick={hamburger_open}
+        onClick={hamburger_change_state}
         size={"1.5rem"}
       />
+
       <Div open={open} first={first}>
+        {/* close icon */}
         <div className={styles.close_container}>
-          <AiOutlineClose onClick={hamburger_close} size={"1.5rem"} />
+          <AiOutlineClose onClick={hamburger_change_state} size={"1.5rem"} />
         </div>
-        <ul className={styles.hamburger_list} onClick={hamburger_close}>
+
+        {/* list of items in menu */}
+        <ul className={styles.hamburger_list} onClick={hamburger_change_state}>
           <Link to="خانه" spy={true} onClick={clickedItem} smooth={true}>
             خانه
           </Link>
