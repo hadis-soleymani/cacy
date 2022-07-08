@@ -1,0 +1,30 @@
+
+@import "mixin";
+
+.container {
+  min-height: 100vh;
+  @include center;
+}
+
+.container_form {
+  max-width: 400px;
+  width: 100%;
+  padding: 2rem 2rem 1rem 2rem;
+  background-color: white;
+  border-radius: 1rem;
+  border: 1px solid #e0e0e2;
+}
+
+//responsive in tablet size
+@media (max-width: 1000px) and (min-width: 768px) {
+  .container_form {
+    border: none;
+  }
+}
+
+//responsive in mobile size
+@media (max-width: 768px) {
+  .container_form {
+    border: none;
+  }
+}

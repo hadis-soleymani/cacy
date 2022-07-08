@@ -16,8 +16,8 @@
   text-align: center;
   padding-bottom: 4rem;
   &:hover {
-    @include boxSadow;
-    border-radius: 5px;
+    border: 1px solid #afafaf;
+
   }
 }
 
