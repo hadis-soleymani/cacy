@@ -31,14 +31,14 @@ const Navbar = () => {
           <AiOutlineSearch size={25} />
         </div>
         <select>
-          <option>حساب کاربری</option>
+           <option>حساب کاربری</option> 
           <option>ورود</option>
         </select>
       </nav>
 
       {/* right navbar container */}
       <nav className={styles.nav_right}>
-        <Link href="#"> خانه</Link>
+        <Link href="/authentication/sign_in"> خانه</Link>
         <Link href="#"> فروشگاه </Link>
         <Link href="#"> درباره ی ما </Link>
         <Link href="#"> تماس با ما </Link>

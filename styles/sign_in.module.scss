@@ -1,0 +1,35 @@
+@import "variables";
+@import "mixin";
+
+.sign_in_container{
+    display: flex;
+}
+.form_container{
+width: 60vw;
+height: 100vh;
+}
+.sign_up_container{
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    background-color: $green;
+}
+//search box
+.input {
+    direction: rtl;
+    width: 10vw;
+  background-color: $light_green;
+  padding: 10px 10px 10px 30px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  color: rgb(70, 77, 97);
+  }
+  .icon_inside {
+    position: relative;
+  }
+  .icon_inside svg {
+    position: absolute;
+    left: 0;
+    top: 10px;
+  }
