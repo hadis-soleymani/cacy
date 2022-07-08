@@ -1,16 +1,25 @@
 import React from "react";
 import Link from 'next/link'
+
+//styles
 import styles from "../../styles/auth.module.scss";
-import { HiOutlineMailOpen } from "react-icons/hi";
-import { useFormik } from "formik";
-import validate from "./validation";
 import Auth_Layout from "./auth_layout";
+
+//icons
+import { HiOutlineMailOpen } from "react-icons/hi";
+
+//libraries
+import { useFormik } from "formik";
+
+//function
+import validate from "./validation";
 
 const Sign_up = () => {
   const formik = useFormik({
     initialValues: {
       email: "",
     },
+    //call validation function
     validate,
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));

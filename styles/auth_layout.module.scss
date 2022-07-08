@@ -1,11 +1,13 @@
 
 @import "mixin";
 
+//all of page
 .container {
   min-height: 100vh;
   @include center;
 }
 
+//container with border
 .container_form {
   max-width: 400px;
   width: 100%;

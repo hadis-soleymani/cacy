@@ -1,3 +1,5 @@
+//note: validation function for formik
+
 const validate = (values) => {
   const errors = {};
 
