@@ -13,7 +13,7 @@ import { useFormik } from "formik";
 
 //function
 import validate from "./validation";
-
+import My_popup from "../popup";
 
 const Sign_in = () => {
   const formik = useFormik({
@@ -29,6 +29,7 @@ const Sign_in = () => {
 
   return (
     <Auth_Layout>
+      <My_popup/>
       <form onSubmit={formik.handleSubmit} className={styles.form_container}>
         <h1 className={styles.title}>فروشگاه کاکی</h1>
 
