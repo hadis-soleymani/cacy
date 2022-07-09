@@ -35,25 +35,11 @@
   background-color: $light_green;
   justify-content: flex-end;
 }
-.nav_left select {
-  border: none;
-  outline: none;
-  padding-right: 5px;
-  background-color: transparent;
-  text-align: right;
-  color: white;
+.account {
   @include link_style;
-  option {
-    background-color: white;
-    color: $dark_text;
-    padding: 0 2px;
-    &:hover {
-      background-color: $green;
-      color: white;
-      box-shadow: none;
-    }
+  margin-left:10px;
   }
-}
+
 //search box
 .input {
   direction: rtl;
@@ -114,7 +100,7 @@
     display: flex;
   }
   .nav_right,
-  .nav_left select {
+  .account {
     display: none;
   }
   .input {

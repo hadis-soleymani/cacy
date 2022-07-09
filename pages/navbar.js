@@ -30,10 +30,9 @@ const Navbar = () => {
           <input type="text" className={styles.input} />
           <AiOutlineSearch size={25} />
         </div>
-        <select>
-           <option>حساب کاربری</option> 
-          <option>ورود</option>
-        </select>
+        <p className={styles.account}>
+          <Link href="/authentication/sign_in">عضویت / ورود</Link>
+        </p>
       </nav>
 
       {/* right navbar container */}
