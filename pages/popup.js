@@ -1,4 +1,5 @@
 import React from "react";
+import styles from '../styles/popup.module.scss'
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 
