@@ -13,7 +13,7 @@ import { useFormik } from "formik";
 
 //function
 import validate from "./validation";
-import My_popup from "../popup";
+import My_popup from "../my_popup";
 
 const Sign_in = () => {
   const formik = useFormik({
