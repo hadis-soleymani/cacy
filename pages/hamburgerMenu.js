@@ -172,7 +172,7 @@ const HamburgerMenu = () => {
           >
             فروشگاه
           </Link>
-          <a href="/authentication/sign_in"> دربارهی ما</a>
+          <a href="/authentication/sign_in"> درباره ی ما</a>
           <Link href="#"> تماس با ما </Link>
         </ul>
       </Div>

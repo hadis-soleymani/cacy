@@ -28,6 +28,7 @@ const Sign_in = () => {
     },
     //call validation function
     validate,
+    
   });
 
   //form submit button
@@ -60,15 +61,15 @@ const Sign_in = () => {
             name="email"
             type="email"
             onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
             value={formik.values.email}
           />
           <HiOutlineMailOpen size={20} />
         </div>
-        {/* show email error */}
+
         {formik.touched.email && formik.errors.email ? (
           <div className={styles.error}>{formik.errors.email}</div>
         ) : null}
-
         <button className={styles.button} onClick={sign_in}>
           ورود
         </button>
