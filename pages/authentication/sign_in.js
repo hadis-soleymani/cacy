@@ -73,9 +73,9 @@ const Sign_in = () => {
         <button className={styles.button} onClick={sign_in}>
           ورود
         </button>
-        <p>
-          <Link href="/authentication/sign_up">ثبت نام</Link>
-        </p>
+        
+          <Link href="/authentication/sign_up"><p>ثبت نام</p></Link>
+        
       </form>
     </Auth_Layout>
   );
