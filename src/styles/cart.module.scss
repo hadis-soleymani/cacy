@@ -1,0 +1,22 @@
+@import "variables";
+@import "mixin";
+
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 65vw;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-top: 1rem;
+  @include border;
+ 
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    width: 80vw;
+    flex-direction: column;
+   
+}}
