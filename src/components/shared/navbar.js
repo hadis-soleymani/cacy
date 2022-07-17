@@ -18,11 +18,13 @@ const Navbar = () => {
   return (
     <header className={styles.header}>
       {/* card container */}
+      <Link href="/screens/shoping_card" >
       <div className={styles.card_container}>
         <div>
           <FiShoppingBag size={26} color="#fff" />
         </div>
       </div>
+      </Link>
 
       {/* search and profile container */}
       <nav className={styles.nav_left}>
