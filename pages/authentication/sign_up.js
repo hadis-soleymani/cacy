@@ -86,7 +86,7 @@ const Sign_up = () => {
         <button className={styles.button} type="submit">
           ثبت نام
         </button>
-        <Link href="/authentication/sign_in"><a> ورود</a></Link>
+        <p><Link href="/authentication/sign_in"> ورود</Link></p>
       </form>
     </Auth_Layout>
   );
