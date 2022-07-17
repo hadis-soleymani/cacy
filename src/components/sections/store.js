@@ -11,7 +11,7 @@ import styles from "../../styles/product.module.scss";
 //libraries
 import ScrollAnimation from "react-animate-on-scroll";
 
-const Stote = () => {
+const Store = () => {
   return (
     <div className={styles.products_container} id="فروشگاه">
       {/* call  products card */}
@@ -43,4 +43,4 @@ const Stote = () => {
   );
 };
 
-export default Stote;
+export default Store;

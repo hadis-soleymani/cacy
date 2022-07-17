@@ -1,6 +1,8 @@
 //note:this file is main file
 
 import Head from "next/head";
+
+//pages
 import Landingpage from "./screens/landingpage";
 
 export default function App() {
@@ -17,8 +19,7 @@ export default function App() {
         ></link>
       </Head>
 
-      {/* main of landing page */}
-<Landingpage/>
+      <Landingpage />
     </div>
   );
 }
