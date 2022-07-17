@@ -11,8 +11,6 @@ import { HiOutlineMailOpen } from "react-icons/hi";
 //libraries
 import { useFormik } from "formik";
 
-//function
-import validate from "./validation";
 
 //components
 import My_popup from "../my_popup";
@@ -21,16 +19,7 @@ const Sign_in = () => {
   //popup controller state
   const [open, setOpen] = useState(false);
 
-  //formik state
-  const formik = useFormik({
-    initialValues: {
-      email: "",
-    },
-    //call validation function
-    validate,
-    
-  });
-
+  
   //form submit button
   const sign_in = (event) => {
     event.preventDefault();
@@ -60,16 +49,12 @@ const Sign_in = () => {
             id="email"
             name="email"
             type="email"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.email}
+           
           />
           <HiOutlineMailOpen size={20} />
         </div>
 
-        {formik.touched.email && formik.errors.email ? (
-          <div className={styles.error}>{formik.errors.email}</div>
-        ) : null}
+       
         <button className={styles.button} onClick={sign_in}>
           ورود
         </button>
