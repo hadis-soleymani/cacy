@@ -15,7 +15,6 @@ const Sign_in = () => {
   //popup controller state
   const [open, setOpen] = useState(false);
 
-  
   //form submit button
   const sign_in = (event) => {
     event.preventDefault();
@@ -45,12 +44,10 @@ const Sign_in = () => {
             id="email"
             name="email"
             type="email"
-           
           />
           <HiOutlineMailOpen size={20} />
         </div>
 
-       
         <button className={styles.button} onClick={sign_in}>
           ورود
         </button>
