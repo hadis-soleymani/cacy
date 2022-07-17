@@ -8,10 +8,6 @@ import Auth_Layout from "./auth_layout";
 //icons
 import { HiOutlineMailOpen } from "react-icons/hi";
 
-//libraries
-import { useFormik } from "formik";
-
-
 //components
 import My_popup from "../my_popup";
 

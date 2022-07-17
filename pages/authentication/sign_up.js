@@ -8,11 +8,7 @@ import Auth_Layout from "./auth_layout";
 //icons
 import { HiOutlineMailOpen } from "react-icons/hi";
 
-//libraries
-import { useFormik } from "formik";
 
-//function
-import validate from "./validation";
 
 const Sign_up = () => {
  
