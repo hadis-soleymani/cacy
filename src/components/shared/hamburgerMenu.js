@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 
 //styles
-import styles from "../styles/hamburgerMenu.module.scss";
+import styles from "../../styles/hamburgerMenu.module.scss";
 
 //icons
 import { AiOutlineClose } from "react-icons/ai";

@@ -1,14 +1,7 @@
 //note:this file is main file
 
 import Head from "next/head";
-
-//components
-import Categories from "./categories";
-import Footer from "./footer";
-import Home from "./home";
-import Navbar from "./navbar";
-import Stote from "./stote";
-import Titr from "./titr";
+import Landingpage from "./screens/landingpage";
 
 export default function App() {
   return (
@@ -25,13 +18,7 @@ export default function App() {
       </Head>
 
       {/* main of landing page */}
-      <Navbar />
-      <Home />
-      <Titr title="دسته بندی های فروشگاه" />
-      <Categories />
-      <Titr title="نهال های ما" />
-      <Stote />
-      <Footer />
+<Landingpage/>
     </div>
   );
 }

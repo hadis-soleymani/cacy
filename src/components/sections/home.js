@@ -5,7 +5,7 @@ import Image from "next/image";
 import ScrollAnimation from "react-animate-on-scroll";
 
 //styles
-import styles from "../styles/home.module.scss";
+import styles from "../../styles/home.module.scss";
 
 const Home = () => {
   return (

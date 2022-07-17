@@ -9,7 +9,7 @@ import Auth_Layout from "./auth_layout";
 import { HiOutlineMailOpen } from "react-icons/hi";
 
 //components
-import My_popup from "../my_popup";
+import My_popup from "../../components/shared/my_popup";
 
 const Sign_in = () => {
   //popup controller state

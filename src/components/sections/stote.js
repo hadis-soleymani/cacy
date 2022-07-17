@@ -3,10 +3,10 @@
 import React from "react";
 
 //components
-import Product from "./product";
+import Product from "../cards/product";
 
 //styles
-import styles from "../styles/product.module.scss";
+import styles from "../../styles/product.module.scss";
 
 //libraries
 import ScrollAnimation from "react-animate-on-scroll";

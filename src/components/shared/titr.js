@@ -1,7 +1,7 @@
 import React from "react";
 
 //styles
-import styles from "../styles/titr.module.scss";
+import styles from "../../styles/titr.module.scss";
 
 //libraries
 import ScrollAnimation from "react-animate-on-scroll";

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 //styles
-import styles from "../styles/my_popup.module.scss";
+import styles from "../../styles/my_popup.module.scss";
 import "reactjs-popup/dist/index.css";
 
 //libraries

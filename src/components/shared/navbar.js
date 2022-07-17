@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 //style
-import styles from "../styles/navbar.module.scss";
+import styles from "../../styles/navbar.module.scss";
 
 //icons
 import { AiOutlineSearch } from "react-icons/ai";
