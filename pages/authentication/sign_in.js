@@ -74,7 +74,7 @@ const Sign_in = () => {
           ورود
         </button>
         
-          <Link href="/authentication/sign_up"><p>ثبت نام</p></Link>
+          <Link href="/authentication/sign_up"><a>ثبت نام</a></Link>
         
       </form>
     </Auth_Layout>
