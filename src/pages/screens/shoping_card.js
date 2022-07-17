@@ -7,40 +7,26 @@ import Cart from "../../components/cards/cart";
 import styles from "../../styles/shoping_card.module.scss";
 
 const Shoping_card = () => {
- 
-  
   return (
     <div className={styles.container}>
       <div>
-<Cart/>
+        <Cart />
       </div>
-      
-        <div className={styles.purchase_details}>
-          <p>
-            <span>Total Items: </span>
-            
-          </p>
-          <p>
-            <span>Total Payments: </span>
-            
-          </p>
-          <div>
-            <button
-              className={styles.check_out}
-             
-            >
-              Check out
-            </button>
-            <br />
-            <button
-              className={styles.clear}
-              
-            >
-              clear
-            </button>
-          </div>
+
+      <div className={styles.purchase_details}>
+        <p>
+          <span>Total Items: </span>
+        </p>
+        <p>
+          <span>Total Payments: </span>
+        </p>
+        <div>
+          <button className={styles.check_out}>Check out</button>
+          <br />
+          <button className={styles.clear}>clear</button>
         </div>
-      
+      </div>
+
       {/* {state.checkout && (
         <div className={styles.clear_checkout_div}>
           <h3>Check Out Successfully</h3>
