@@ -10,6 +10,7 @@ import { HiOutlineMailOpen } from "react-icons/hi";
 
 //components
 import My_popup from "../../components/shared/my_popup";
+import Button from "../../components/shared/button";
 
 const Sign_in = () => {
   //popup controller state
@@ -48,9 +49,9 @@ const Sign_in = () => {
           <HiOutlineMailOpen size={20} />
         </div>
 
-        <button className={styles.button} onClick={sign_in}>
+        <Button onClick={sign_in} width="100%" height="fit-content">
           ورود
-        </button>
+        </Button>
         <p>
           <Link href="/authentication/sign_up">ثبت نام</Link>
         </p>

@@ -7,6 +7,7 @@ import Auth_Layout from "./auth_layout";
 
 //icons
 import { HiOutlineMailOpen } from "react-icons/hi";
+import Button from "../../components/shared/button";
 
 
 
@@ -58,9 +59,9 @@ const Sign_up = () => {
 
       
 
-        <button className={styles.button} type="submit">
+        <Button  type="submit" width="fit-content" height="fit-content">
           ثبت نام
-        </button>
+        </Button>
         <p><Link href="/authentication/sign_in"> ورود</Link></p>
       </form>
     </Auth_Layout>

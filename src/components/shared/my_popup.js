@@ -10,6 +10,7 @@ import Popup from "reactjs-popup";
 
 //icons
 import { AiOutlineClose } from "react-icons/ai";
+import Button from "./button";
 
 //style of popup container
 const contentStyle = {
@@ -54,13 +55,13 @@ const My_popup = ({ title, description, status, open }) => {
           <h2>{title}</h2>
           <p>{description}</p>
           <hr />
-          <button
+          <Button width="fit-content" height="fit-content"
             onClick={() => {
               close();
             }}
           >
             باشه
-          </button>
+          </Button>
         </div>
       )}
     </Popup>
