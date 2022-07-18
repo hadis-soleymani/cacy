@@ -5,18 +5,10 @@
 .container {
   display: flex;
   align-items: center;
-  width: 65vw;
+  width: 60vw;
   justify-content: space-between;
   padding: 1rem;
   margin-top: 1rem;
-  @include border;
- 
+  border-top: 1px solid rgba(205, 207, 211,.5) ;
 }
 
-
-@media (max-width: 768px) {
-  .container {
-    width: 80vw;
-    flex-direction: column;
-   
-}}

@@ -33,38 +33,6 @@
   }
 }
 
-//special button with animation
-@mixin button {
-  background-color: $green;
-  line-height: 20px;
-  color: white;
-  height: 45px;
-  width: 8rem;
-  border: none;
-  outline: none;
-  position: relative;
-  z-index: 9;
-}
-.button:before {
-  content: "";
-  position: absolute;
-  background-color: $light_green;
-  top: 100%;
-  width: 100%;
-  left: 0;
-  height: 0;
-  z-index: -1;
-  opacity: 0.9;
-  transition: all ease 0.5s;
-}
-.button:hover {
-  color: $green;
-}
-.button:hover:before {
-  top: 0;
-  height: 100%;
-}
-//end of button animated
 
 //opacity animation
 @mixin opacity_animation($start, $duration) {

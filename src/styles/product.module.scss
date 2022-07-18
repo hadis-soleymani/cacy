@@ -40,9 +40,6 @@
     color: $green;
   }
 }
-.button {
-  @include button;
-}
 
 //responsive all products in mobile size
 @media (max-width: 768px) {

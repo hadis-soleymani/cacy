@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-
+import Button from "../shared/button";
 //styles
 import styles from "../../styles/product.module.scss";
 
@@ -16,7 +16,7 @@ const Product = () => {
         <h1>کاکتوس پهلوون</h1>
         <p>$2500</p>
       </div>
-      <button className={styles.button}>افزودن به سبد خرید</button>
+      <Button width="fit-content" height="fit-content">افزودن به سبد خرید</Button>
     </div>
   );
 };

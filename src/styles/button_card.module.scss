@@ -1,0 +1,15 @@
+@import "variables";
+@import "mixin";
+
+.container{
+  display: flex;
+  width: fit-content;
+  align-items: center;
+
+  p{
+    padding: 0 .5rem;
+    font-size: .8rem;
+    color: $dark_text;
+    margin: 0;
+  }
+}

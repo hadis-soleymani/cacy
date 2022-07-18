@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-
+import Button from "../shared/button";
 //libraries
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -27,7 +27,7 @@ const Home = () => {
             مربوط به سیستم استفاده کنید.
           </p>
         </ScrollAnimation>
-        <button className={styles.button}>Discover</button>
+        <Button width="fit-content" height="fit-content"> سبد خرید</Button>
       </main>
       <div className={styles.green_section}>
         <div>
