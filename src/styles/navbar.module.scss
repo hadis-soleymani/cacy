@@ -22,9 +22,22 @@
 }
 .card_container div {
   background-color: $green;
+  position: relative;
   padding: 8px;
   border-radius: 50%;
   @include center;
+  p {
+    position: absolute;
+    left: -0.6rem;
+    bottom: 0.6rem;
+    font-size: 0.7rem;
+    color: white;
+    width: 1.2rem;
+    height: 1.2rem;
+    @include center;
+    border-radius: 50%;
+    background-color: $dark_text;
+  }
 }
 
 //nav left
@@ -37,8 +50,8 @@
 }
 .account {
   @include link_style;
-  margin-left:10px;
-  }
+  margin-left: 10px;
+}
 
 //search box
 .input {

@@ -22,6 +22,7 @@ const Navbar = () => {
       <div className={styles.card_container}>
         <div>
           <FiShoppingBag size={26} color="#fff" />
+          <p>10</p>
         </div>
       </div>
       </Link>
