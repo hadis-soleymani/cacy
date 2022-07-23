@@ -41,7 +41,7 @@ const Sign_up = () => {
         <div className={styles.icon_inside}>
           <input
             className={styles.input}
-            placeholder="email"
+            placeholder="نام خود را وارد نمایید"
             id="firstName"
             name="firstName"
             type="firstName"
@@ -56,7 +56,7 @@ const Sign_up = () => {
         <div className={styles.icon_inside}>
           <input
             className={styles.input}
-            placeholder="email"
+            placeholder="نام خانوادگی خود را وارد نمایید"
             id="lastName"
             name="lastName"
             type="lastName"
@@ -71,7 +71,7 @@ const Sign_up = () => {
         <div className={styles.icon_inside}>
           <input
             className={styles.input}
-            placeholder="email"
+            placeholder="ایمیل خود را وارد نمایید"
             id="email"
             name="email"
             type="email"

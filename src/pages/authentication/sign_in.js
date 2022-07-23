@@ -54,6 +54,7 @@ const Sign_in = () => {
         <div className={styles.icon_inside}>
           <input
             className={styles.input}
+            placeholder="ایمیل خود را وارد نمایید"
             id="email"
             name="email"
             type="email"
