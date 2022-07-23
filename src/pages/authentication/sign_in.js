@@ -11,7 +11,49 @@ import { HiOutlineMailOpen } from "react-icons/hi";
 //components
 import My_popup from "../../components/shared/my_popup";
 import Button from "../../components/shared/button";
+const validate = values => {
 
+  const errors = {};
+
+  if (!values.firstName) {
+
+    errors.firstName = 'Required';
+
+  } else if (values.firstName.length > 15) {
+
+    errors.firstName = 'Must be 15 characters or less';
+
+  }
+
+
+
+  if (!values.lastName) {
+
+    errors.lastName = 'Required';
+
+  } else if (values.lastName.length > 20) {
+
+    errors.lastName = 'Must be 20 characters or less';
+
+  }
+
+
+
+  if (!values.email) {
+
+    errors.email = 'Required';
+
+  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+
+    errors.email = 'Invalid email address';
+
+  }
+
+
+
+  return errors;
+
+};
 const Sign_in = () => {
   //popup controller state
   const [open, setOpen] = useState(false);
@@ -19,9 +61,15 @@ const Sign_in = () => {
 
     initialValues: {
 
+      firstName: '',
+
+      lastName: '',
+
       email: '',
 
     },
+
+    validate,
 
     onSubmit: values => {
 
@@ -67,7 +115,7 @@ const Sign_in = () => {
           />
           <HiOutlineMailOpen size={20} />
         </div>
-
+        {formik.errors.email ? <div>{formik.errors.email}</div> : null}
         <Button type="submit" width="100%" height="fit-content">
           ورود
         </Button>
