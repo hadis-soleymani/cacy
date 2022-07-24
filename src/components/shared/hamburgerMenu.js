@@ -1,7 +1,7 @@
 // note: in this file I create hamburger menu component in mobile size
 
 import React, { useState } from "react";
-
+import NextLink from 'next/link'
 //styles
 import styles from "../../styles/hamburgerMenu.module.scss";
 
@@ -161,8 +161,7 @@ const HamburgerMenu = () => {
           <Link to="خانه" spy={true} onClick={clickedItem} smooth={true}>
             خانه
           </Link>
-          <Link href="#"> حساب کاربری</Link>
-          <Link href="#"> خروج</Link>
+          <NextLink href="/authentication/sign_in"> خروج</NextLink>
           <Link
             href="#"
             to="فروشگاه"
