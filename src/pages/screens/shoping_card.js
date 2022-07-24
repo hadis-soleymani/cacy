@@ -1,18 +1,15 @@
 import React, { useContext } from "react";
-
+import styles from '../../styles/shoping_card.module.scss'
 import Cart from "../../components/cards/cart";
+import Order_summery from "../../components/cards/order_summery";
 
 //Component
 
-
 const Shoping_card = () => {
   return (
-    <div >
-    
-        <Cart />
-
-
-    
+    <div className={styles.container}>
+      <Cart />
+      <Order_summery />
     </div>
   );
 };
