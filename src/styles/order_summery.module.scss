@@ -1,7 +1,50 @@
 @import "variables";
 @import "mixin";
 
-.container{
-    width: 24vw;
-    background-color: aqua;
+.container {
+  max-width: 260px;
+  min-width: 230px;
+  color: $dark-text;
+  font-size: 0.8rem;
+  padding-top: 1.5rem;
+  table {
+    width: 100%;
+    background-color: #eeeeee;
+    direction: rtl;
+    padding: 1rem;
+    border-collapse: collapse;
+    border: 1px solid rgb(204, 204, 204);
+    margin-bottom: 0.5rem;
+  }
+  table caption {
+    background-color: #eeeeee;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 1px solid rgb(204, 204, 204);
+    border-bottom: none;
+    border-collapse: collapse;
+  }
+  th {
+    text-align: right;
+    padding: 0.5rem;
+  }
+  td {
+    text-align: left;
+    padding: 0.5rem;
+  }
+  tr:nth-child(4) {
+    background-color: #dddbdb;
+    border-bottom: 1px solid rgb(204, 204, 204);
+  }
+}
+.discount_code {
+  color: $green;
+  font-weight: 500;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-right: 5px;
+  }
 }

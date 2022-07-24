@@ -1,0 +1,12 @@
+@import "variables";
+@import "mixin";
+
+.container {
+  width: 100vw;
+  height: 10vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: $green;
+  z-index: 20;
+}
