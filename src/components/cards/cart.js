@@ -56,7 +56,7 @@ const Cart = () => {
               <AiOutlineClose size={28} className={styles.icon} />
             </td>
           </tr>
-          <tr>
+           <tr>
             <td>
               <div className={styles.img}>
                 <Image src="/cuctus2.png" alt="logo" width={40} height={60} />
