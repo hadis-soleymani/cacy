@@ -18,7 +18,7 @@ const Sign_up = () => {
     initialValues: {
       firstName: "",
       lastName: "",
-      email: "",
+      phoneNumber: "",
     },
     validate,
     onSubmit: (values) => {
@@ -71,17 +71,17 @@ const Sign_up = () => {
         <div className={styles.icon_inside}>
           <input
             className={styles.input}
-            placeholder="ایمیل خود را وارد نمایید"
-            id="email"
-            name="email"
-            type="email"
+            placeholder="شماره تلفن خود را وارد نمایید"
+            id="phoneNumber"
+            name="phoneNumber"
+            type="phoneNumber"
             onChange={formik.handleChange}
-            value={formik.values.email}
+            value={formik.values.phoneNumber}
           />
           <HiOutlineMailOpen size={20} />
         </div>
-        {formik.errors.email ? (
-          <div className={styles.error}>{formik.errors.email}</div>
+        {formik.errors.phoneNumber ? (
+          <div className={styles.error}>{formik.errors.phoneNumber}</div>
         ) : null}
         <Button type="submit" width="100%" height="fit-content">
           ثبت نام
