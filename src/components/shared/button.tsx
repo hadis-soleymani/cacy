@@ -41,11 +41,12 @@ interface Props{
   width?:string;
   height?:string;
   onClick?:()=>void;
+  type?:string;
 }
 
 const Button:React.FC<Props> = ({ children, width, height }) => {
   return (
-    <MyButton width={width} height={height}>
+    <MyButton width={width} height={height} >
       {children}
     </MyButton>
   );

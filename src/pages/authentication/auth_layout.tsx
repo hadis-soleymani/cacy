@@ -1,4 +1,7 @@
+import { ReactElement } from "react";
+import { JsxAttribute } from "typescript";
 import styles from "../../styles/auth_layout.module.scss";
+
 
 export default function Auth_Layout({ children }) {
   return (
