@@ -5,7 +5,7 @@ import Head from "next/head";
 //pages
 import Landingpage from "./screens/landingpage";
 
-export default function App() {
+const App = () => {
   return (
     <div>
       <Head>
@@ -18,8 +18,8 @@ export default function App() {
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
         ></link>
       </Head>
-
       <Landingpage />
     </div>
   );
-}
+};
+export default App;
