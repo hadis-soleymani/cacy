@@ -37,9 +37,10 @@ const MyButton = styled.button`
 `;
 
 interface Props{
-  children: React.ReactNode; 
-  width:number;
-  height:number;
+  children?: React.ReactNode; 
+  width?:string;
+  height?:string;
+  onClick?:()=>void;
 }
 
 const Button:React.FC<Props> = ({ children, width, height }) => {
