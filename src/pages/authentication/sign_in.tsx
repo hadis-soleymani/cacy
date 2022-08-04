@@ -13,11 +13,15 @@ import My_popup from "../../components/shared/my_popup";
 import Button from "../../components/shared/button";
 import validate from "../../components/helper/validation";
 
+interface MyFormValues {
 
+  email: string;
+
+}
 const Sign_in = () => {
   //popup controller state
-  const [open, setOpen] = useState(false);
-  const formik = useFormik({
+  const [open, setOpen] = useState<boolean>(false);
+  const formik = useFormik<MyFormValues>({
 
     initialValues: {
       email: '',
@@ -29,12 +33,7 @@ const Sign_in = () => {
     },
 
   });
-  //form submit button
-  const sign_in = (event) => {
-    event.preventDefault();
-
-    setOpen(!open);
-  };
+ 
 
   return (
     <Auth_Layout>

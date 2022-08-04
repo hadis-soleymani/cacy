@@ -19,7 +19,16 @@ const contentStyle = {
   borderRadius: "1rem",
 };
 
-const My_popup = ({ title, description, status, open }) => {
+interface Props{
+  title: string;
+  description:string;
+  status:string;
+  open:boolean;
+}
+
+
+
+const My_popup: React.FC<Props> = ({ title, description, status, open }) => {
   //for resolve hydration error (state pre-render)
   const [isBrowser, setIsBrowser] = useState(false);
 
@@ -27,7 +36,7 @@ const My_popup = ({ title, description, status, open }) => {
   useEffect(() => setIsBrowser(true), []);
 
   return isBrowser ? (
-    <Popup open={open} position="center" contentStyle={contentStyle}>
+    <Popup open={open} position="center center" contentStyle={contentStyle}>
       {(close) => (
         <div className={styles.popup_container}>
           <AiOutlineClose

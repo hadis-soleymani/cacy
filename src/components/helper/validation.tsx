@@ -1,5 +1,12 @@
-const validate = (values) => {
-  const errors = {};
+interface MyFormValues {
+  firstName?: string;
+  lastName?: string;
+  phoneNumber?: string;
+  email?:string;
+}
+
+const validate = (values:MyFormValues) => {
+  const errors:MyFormValues = {};
 
   if (!values.firstName) {
     errors.firstName = "این فیلد الزامی است";

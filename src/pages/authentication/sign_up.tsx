@@ -11,10 +11,15 @@ import Button from "../../components/shared/button";
 import validate from "../../components/helper/validation";
 import My_popup from "../../components/shared/my_popup";
 
+interface MyFormValues {
+  firstName: string;
+  lastName: string;
+  phoneNumber: string;
+}
 const Sign_up = () => {
   //popup controller state
   const [open, setOpen] = useState(false);
-  const formik = useFormik({
+  const formik = useFormik<MyFormValues>({
     initialValues: {
       firstName: "",
       lastName: "",
