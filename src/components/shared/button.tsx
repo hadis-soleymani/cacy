@@ -1,5 +1,7 @@
 import React from "react";
+import { Interface } from "readline";
 import styled from "styled-components";
+import { number } from "yup";
 
 //styled components
 const MyButton = styled.button`
@@ -34,7 +36,13 @@ const MyButton = styled.button`
   }
 `;
 
-const Button = ({ children, width, height }) => {
+interface Props{
+  children: React.ReactNode; 
+  width:number;
+  height:number;
+}
+
+const Button:React.FC<Props> = ({ children, width, height }) => {
   return (
     <MyButton width={width} height={height}>
       {children}
