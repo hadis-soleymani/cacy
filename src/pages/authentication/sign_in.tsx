@@ -33,12 +33,7 @@ const Sign_in = () => {
     },
 
   });
-  //form submit button
-  const sign_in = (event) => {
-    event.preventDefault();
-
-    setOpen(!open);
-  };
+ 
 
   return (
     <Auth_Layout>

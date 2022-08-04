@@ -12,9 +12,12 @@ import { GiHamburgerMenu } from "react-icons/gi";
 //libraries
 import styled from "styled-components";
 import { Link } from "react-scroll";
-
+interface Props{
+  first?:boolean;
+  open?:boolean;
+}
 //styled components
-const Div = styled.div`
+const Div = styled.div<Props>`
   display: none;
   @media (max-width: 768px) {
     display: ${(props) => (!props.first ? "flex" : "none")};
@@ -140,8 +143,8 @@ const HamburgerMenu = () => {
   //for prevent from closing animation at loading time
   const [first, setFirst] = useState(true);
 
-  const clickedItem = (event) => {
-    setClicked({ [event.target.text]: true });
+  const clickedItem = () => {
+  //  setClicked({ [event.target.textContent]: true });
     setOpen(!open);
   };
 
@@ -167,7 +170,7 @@ const HamburgerMenu = () => {
 
         {/* list of items in menu */}
         <ul className={styles.hamburger_list} onClick={hamburger_change_state}>
-          <Link to="خانه" spy={true} onClick={clickedItem} smooth={true}>
+          <Link to="خانه" spy={true} onClick={clickedItem}  smooth={true}>
             خانه
           </Link>
           <NextLink href="/authentication/sign_in"> خروج</NextLink>
@@ -180,8 +183,8 @@ const HamburgerMenu = () => {
           >
             فروشگاه
           </Link>
-          <Link href="#"> درباره ی ما</Link>
-          <Link href="#"> تماس با ما </Link>
+          <NextLink href="#"> درباره ی ما</NextLink>
+          <NextLink href="#"> تماس با ما </NextLink>
         </ul>
       </Div>
     </>

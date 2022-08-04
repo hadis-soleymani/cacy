@@ -2,9 +2,12 @@ import React from "react";
 import { Interface } from "readline";
 import styled from "styled-components";
 import { number } from "yup";
-
+interface Props{
+  width?:string;
+  height?:string;
+}
 //styled components
-const MyButton = styled.button`
+const MyButton = styled.button<Props>`
   background-color: #6b8c55;
   color: white;
   width: ${(props) => props.width};
