@@ -112,10 +112,19 @@ const Div = styled.div`
     }
   }
 `;
+type ClickObject = {
+  خانه?: false,
+  فروشگاه?: false,
+  AboutMe?: false,
+  Expriences?: false,
+  Works?: false,
+  Blog?: false,
+  ContactUs?: false,
+}
 
 const HamburgerMenu = () => {
   //for scroll with click
-  const [clicked, setClicked] = useState({
+  const [clicked, setClicked] = useState<ClickObject>({
     خانه: false,
     فروشگاه: false,
     AboutMe: false,
