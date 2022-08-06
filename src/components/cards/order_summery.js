@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../shared/button";
 import styles from "../../styles/order_summery.module.scss";
 import {BiArrowBack} from 'react-icons/bi'
+
 const Order_summery = () => {
   return (
     <div className={styles.container}>

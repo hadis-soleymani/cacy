@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import { AiOutlineClose } from "react-icons/ai";
-import styles from "../../styles/cart.module.scss";
+import styles from "../../styles/desktop_table.module.scss";
 import Button_card from "./button_card";
 
-const Cart = () => {
+const Desktop_table = () => {
   return (
     <div className={styles.container}>
       <table>
@@ -86,4 +86,4 @@ const Cart = () => {
   );
 };
 
-export default Cart;
+export default Desktop_table;

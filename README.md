@@ -34,3 +34,64 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 
+
+.container {
+  display: flex;
+  align-items: center;
+
+  color: $dark-text;
+  text-align: center;
+  th {
+    color: $light_text;
+    font-size: 0.9rem;
+    font-weight: 500;
+    
+  }
+  tr {
+    border-bottom: 1px solid #ebebec;
+  
+  }
+}
+.container th:nth-child(1),
+.container td:nth-child(2) {
+  text-align: left;
+}
+.container td:nth-child(4) {
+  text-align: center;
+  height: calc(70px + 2rem);
+  @include center;
+}
+.container td:nth-child(1) {
+  width: calc(70px + 1rem);
+}
+.container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.container td p {
+  margin: 0;
+}
+.container td p:nth-child(2) {
+  font-size: 0.7rem;
+  color: $light_text;
+}
+.img {
+  background-color: #eeeeee;
+  height: 70px;
+  width: 70px;
+  margin: 1rem 1rem 1rem 0;
+  @include center;
+}
+.icon {
+  background-color: #eeeeee;
+  padding: 5px;
+  border-radius: 50%;
+  &:hover {
+    background-color: #c8c8c8;
+  }
+}
+
+@media (max-width:768px){
+  
+}
