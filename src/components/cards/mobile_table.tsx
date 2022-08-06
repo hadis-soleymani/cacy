@@ -29,7 +29,7 @@ const Mobile_table = () => {
           </tr>
           <tr>
             <th>تعداد</th>
-            <th>محصول</th>
+            <th>قیمت کل</th>
             <th></th>
           </tr>
           <tr>
