@@ -3,15 +3,28 @@
 
 .container {
   display: grid;
-  margin:14vh 0 4vh 0;
+  margin: 14vh 0 4vh 0;
   grid-template-columns: 60vw 24vw;
   gap: 4vw;
   padding: 2rem 5vw;
 }
+.mobile {
+  display: none;
+}
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   .container {
     grid-template-columns: auto;
-   
+  }
+  .mobile {
+    display: flex;
+  }
+  .desktop {
+    display: none;
+  }
+}
+@media (max-width: 1000px) and (min-width: 768px) {
+  .container {
+    grid-template-columns: auto;
   }
 }

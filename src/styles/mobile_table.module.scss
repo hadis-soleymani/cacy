@@ -1,0 +1,55 @@
+@import "variables";
+@import "mixin";
+
+.container {
+  display: flex;
+  align-items: center;
+  color: $dark-text;
+  text-align: center;
+
+  th {
+    color: $light_text;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: #eeeeee;
+    min-height: 2rem;
+  }
+  tr {
+    border-bottom: 1px solid #ebebec;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  td {
+    min-height: calc(70px + 2rem);
+    @include center;
+    flex-direction: column;
+  }
+  table {
+    border-collapse: collapse;
+    width: 90vw;
+  }
+}
+
+.img {
+  background-color: #eeeeee;
+  height: 70px;
+  width: 70px;
+  margin: 1rem 1rem 1rem 0;
+  @include center;
+}
+.icon {
+  background-color: #eeeeee;
+  padding: 5px;
+  border-radius: 50%;
+  &:hover {
+    background-color: #c8c8c8;
+  }
+}
+.container td p {
+  margin: 0;
+  text-align: left;
+}
+.container td p:nth-child(2) {
+  font-size: 0.7rem;
+  color: $light_text;
+}
