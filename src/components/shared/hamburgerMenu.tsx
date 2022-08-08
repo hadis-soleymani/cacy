@@ -1,7 +1,7 @@
 // note: in this file I create hamburger menu component in mobile size
 
 import React, { useState } from "react";
-import NextLink from 'next/link'
+import NextLink from "next/link";
 //styles
 import styles from "../../styles/hamburgerMenu.module.scss";
 
@@ -12,9 +12,9 @@ import { GiHamburgerMenu } from "react-icons/gi";
 //libraries
 import styled from "styled-components";
 import { Link } from "react-scroll";
-interface Props{
-  first?:boolean;
-  open?:boolean;
+interface Props {
+  first?: boolean;
+  open?: boolean;
 }
 //styled components
 const Div = styled.div<Props>`
@@ -36,7 +36,7 @@ const Div = styled.div<Props>`
     cursor: pointer;
     animation-timing-function: linear;
     animation-name: ${(props) => (!props.open ? "menu_close" : "menu_open")};
-    animation-duration: 0.5s;
+    animation-duration: 0.4s;
     animation-fill-mode: forwards;
     @keyframes menu_open {
       0% {
@@ -115,15 +115,19 @@ const Div = styled.div<Props>`
     }
   }
 `;
+const Ul = styled.ul<Props>`
+  display: ${(props) => (props.open ? "flex" : "none")};
+`;
+
 type ClickObject = {
-  خانه?: false,
-  فروشگاه?: false,
-  AboutMe?: false,
-  Expriences?: false,
-  Works?: false,
-  Blog?: false,
-  ContactUs?: false,
-}
+  خانه?: false;
+  فروشگاه?: false;
+  AboutMe?: false;
+  Expriences?: false;
+  Works?: false;
+  Blog?: false;
+  ContactUs?: false;
+};
 
 const HamburgerMenu = () => {
   //for scroll with click
@@ -144,7 +148,7 @@ const HamburgerMenu = () => {
   const [first, setFirst] = useState(true);
 
   const clickedItem = () => {
-  //  setClicked({ [event.target.textContent]: true });
+    //  setClicked({ [event.target.textContent]: true });
     setOpen(!open);
   };
 
@@ -169,8 +173,12 @@ const HamburgerMenu = () => {
         </div>
 
         {/* list of items in menu */}
-        <ul className={styles.hamburger_list} onClick={hamburger_change_state}>
-          <Link to="خانه" spy={true} onClick={clickedItem}  smooth={true}>
+        <Ul
+          className={styles.hamburger_list}
+          onClick={hamburger_change_state}
+          open={open}
+        >
+          <Link to="خانه" spy={true} onClick={clickedItem} smooth={true}>
             خانه
           </Link>
           <NextLink href="/authentication/sign_in"> خروج</NextLink>
@@ -185,7 +193,7 @@ const HamburgerMenu = () => {
           </Link>
           <NextLink href="#"> درباره ی ما</NextLink>
           <NextLink href="#"> تماس با ما </NextLink>
-        </ul>
+        </Ul>
       </Div>
     </>
   );
