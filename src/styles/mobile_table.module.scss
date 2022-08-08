@@ -29,13 +29,16 @@
     border-collapse: collapse;
     width: 90vw;
   }
+  tbody{
+    border: 1px solid #ccc;
+    }
 }
 
 .img {
   background-color: #eeeeee;
   height: 70px;
   width: 70px;
-  margin: 1rem 1rem 1rem 0;
+ // margin: 1rem 1rem 1rem 0;
   @include center;
 }
 .icon {
