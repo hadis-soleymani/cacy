@@ -1,0 +1,15 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixin";
+
+
+.input {
+    direction: rtl;
+    height: 45px;
+    width: 100%;
+    background-color: $green;
+    // padding: 1.2rem 2rem 1.2rem 2rem;
+    // border: none;
+    outline: none;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
