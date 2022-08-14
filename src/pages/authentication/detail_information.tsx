@@ -16,7 +16,7 @@ interface MyFormValues {
   lastName: string;
   phoneNumber: string;
 }
-const Sign_up = () => {
+const Detail_information = () => {
   //popup controller state
   const [open, setOpen] = useState(false);
   const formik = useFormik<MyFormValues>({
@@ -41,12 +41,12 @@ const Sign_up = () => {
       />
 
       <form className={styles.form_container} onSubmit={formik.handleSubmit}>
-        <h1 className={styles.title}>فروشگاه کاکی</h1>
+        <h1 className={styles.title}>افزودن اطلاعات تکمیلی</h1>
 
         <div className={styles.icon_inside}>
           <input
             className={styles.input}
-            placeholder="نام خود را وارد نمایید"
+            placeholder="نام استان خود را وارد نمایید"
             id="firstName"
             name="firstName"
             type="firstName"
@@ -61,7 +61,7 @@ const Sign_up = () => {
         <div className={styles.icon_inside}>
           <input
             className={styles.input}
-            placeholder="نام خانوادگی خود را وارد نمایید"
+            placeholder="نام شهر خود را وارد نمایید"
             id="lastName"
             name="lastName"
             type="lastName"
@@ -76,7 +76,37 @@ const Sign_up = () => {
         <div className={styles.icon_inside}>
           <input
             className={styles.input}
-            placeholder="شماره تلفن خود را وارد نمایید"
+            placeholder="آدرس خود را وارد نمایید" 
+            id="phoneNumber"
+            name="phoneNumber"
+            type="phoneNumber"
+            onChange={formik.handleChange}
+            value={formik.values.phoneNumber}
+          />
+          <HiOutlineMailOpen size={20} />
+        </div>
+        {formik.errors.phoneNumber ? (
+          <div className={styles.error}>{formik.errors.phoneNumber}</div>
+        ) : null}
+         <div className={styles.icon_inside}>
+          <input
+            className={styles.input}
+            placeholder="کد پستی خود را وارد نمایید" 
+            id="phoneNumber"
+            name="phoneNumber"
+            type="phoneNumber"
+            onChange={formik.handleChange}
+            value={formik.values.phoneNumber}
+          />
+          <HiOutlineMailOpen size={20} />
+        </div>
+        {formik.errors.phoneNumber ? (
+          <div className={styles.error}>{formik.errors.phoneNumber}</div>
+        ) : null}
+         <div className={styles.icon_inside}>
+          <input
+            className={styles.input}
+            placeholder="توضیحات تکمیلی خود را وارد نمایید(اختیاری)" 
             id="phoneNumber"
             name="phoneNumber"
             type="phoneNumber"
@@ -89,14 +119,14 @@ const Sign_up = () => {
           <div className={styles.error}>{formik.errors.phoneNumber}</div>
         ) : null}
         <Button type="submit" width="100%" height="fit-content">
-          ثبت نام
+          تکمیل خرید
         </Button>
         <p>
-          <Link href="/authentication/detail_information"> ورود</Link>
+          <Link href="/authentication/sign_in"> بازگشت به فروشگاه</Link>
         </p>
       </form>
     </Auth_Layout>
   );
 };
 
-export default Sign_up;
+export default Detail_information;
