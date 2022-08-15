@@ -48,3 +48,10 @@
     margin-right: 5px;
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    width: 84vw;
+    max-width: 500px;
+  }
+}
