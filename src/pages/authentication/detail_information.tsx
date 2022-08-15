@@ -50,7 +50,7 @@ const Detail_information = () => {
       <form className={styles.form_container} onSubmit={formik.handleSubmit}>
         <h1 className={styles.title}>افزودن اطلاعات تکمیلی</h1>
         <Dropdown
-          options={[{ value: "Hormuzgan", label: "هرمزگان" },{ value: "Tehran", label: "تهران" }]}
+          options={[{ value: "Hormuzgan", label: "هرمزگان" }]}
           name={"state"}
           value={formik.values.state}
           onChange={formik.setFieldValue}
