@@ -36,6 +36,8 @@ const Detail_information = () => {
       setOpen(!open);
     },
   });
+
+  console.log(formik.values.state);
   return (
     <Auth_Layout>
       <My_popup
@@ -47,12 +49,22 @@ const Detail_information = () => {
 
       <form className={styles.form_container} onSubmit={formik.handleSubmit}>
         <h1 className={styles.title}>افزودن اطلاعات تکمیلی</h1>
-        <Dropdown options={[{ value: "Hormuzgan", label: "هرمزگان" }]} />
+        <Dropdown
+          options={[{ value: "Hormuzgan", label: "هرمزگان" },{ value: "Tehran", label: "تهران" }]}
+          name={"state"}
+          value={formik.values.state}
+          onChange={formik.setFieldValue}
+        />
         {formik.errors.state ? (
           <div className={styles.error}>{formik.errors.state}</div>
         ) : null}
 
-        <Dropdown options={[{ value: "Bandar Abbas", label: "بندرعباس" }]} />
+        <Dropdown
+          options={[{ value: "Bandar Abbas", label: "بندرعباس" }]}
+          name={"city"}
+          value={formik.values.city}
+          onChange={formik.setFieldValue}
+        />
         {formik.errors.city ? (
           <div className={styles.error}>{formik.errors.city}</div>
         ) : null}

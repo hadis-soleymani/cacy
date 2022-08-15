@@ -1,11 +1,12 @@
 import React from "react";
 import Select, { StylesConfig } from "react-select";
+//import AsyncSelect from 'react-select/async'
 
 interface Props {
   options: { value: string; label: string }[];
   value?: string;
-  y?: any;
-  name?: string;
+  onChange?:  (name:string,value:string) => void;
+  name?:string;
 }
 //const options = [{ value: "Hormuzgan", label: "هرمزگان" }];
 const colourStyles: StylesConfig = {
@@ -33,7 +34,12 @@ const colourStyles: StylesConfig = {
     };
   },
 };
-const Dropdown: React.FC<Props> = ({ options, value, y, name }) => {
+const Dropdown: React.FC<Props> = ({ options, value,onChange,name }) => {
+  const handleChange = (value: string) => {
+    // this is going to call setFieldValue and manually update values.topcis
+    onChange(name, value);
+  };
+
   return (
     <div style={{ width: "100%" }}>
       <Select
@@ -41,7 +47,7 @@ const Dropdown: React.FC<Props> = ({ options, value, y, name }) => {
         placeholder="نام استان خود را وارد کنید"
         styles={colourStyles}
         value={value}
-        name={name}
+        onChange={handleChange}
       />
     </div>
   );
