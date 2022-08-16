@@ -1,0 +1,41 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixin";
+
+.container {
+  @include border_box;
+  padding: 1rem 2rem;
+  width: 70%;
+  margin: 4rem auto;
+  color: $dark_text;
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin: 0;
+    padding: 0;
+    span {
+      color: $light_text;
+      padding-right: 0.5rem;
+    }
+    li p {
+        margin: .5rem;
+    }
+  }
+  h3 {
+    text-align: right;
+    color: $green;
+    margin: 0 0 1rem 0;
+  }
+  a {
+    color: #19bfd3;
+    @include center;
+    &::before {
+      font-family: "FontAwesome";
+      content: "\f104";
+      margin: 0 5px;
+    }
+  }
+}
