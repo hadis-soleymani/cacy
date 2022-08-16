@@ -5,7 +5,7 @@
   @include border_box;
   padding: 1rem 2rem;
   width: 70%;
-  margin: 4rem auto;
+  margin: 4rem auto  1rem auto;
   color: $dark_text;
 
   ul {
@@ -30,6 +30,7 @@
     text-align: right;
     color: $green;
     margin: 0 0 1rem 0;
+    font-weight: 500;
   }
   a {
     color: #19bfd3;
@@ -43,6 +44,18 @@
   }
 }
 
+.add_adress{
+    font-size: 1rem;
+   text-align: center;
+   font-weight: 500;
+   color: $green;
+   @include center;
+   &::before {
+    font-family: "FontAwesome";
+    content: "\f067";
+    margin: 0 5px;
+  }
+}
 
 @media (max-width: 768px) {
     .container {

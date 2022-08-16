@@ -4,6 +4,7 @@ import styles from "./show_address_and_info.module.scss";
 
 const Show_address_and_info = () => {
   return (
+    <>
     <div className={styles.container}>
       <h3>آدرس اول</h3>
       <ul>
@@ -32,6 +33,8 @@ const Show_address_and_info = () => {
         <Link href="#">ویرایش</Link>
       </ul>
     </div>
+    <h2 className={styles.add_adress}>افزودن آدرس</h2>
+    </>
   );
 };
 
