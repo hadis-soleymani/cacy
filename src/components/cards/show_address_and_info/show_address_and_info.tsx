@@ -26,7 +26,7 @@ const Show_address_and_info = () => {
       <ul>
         <li>
           <p>
-            آدرس:<span>هرمزگان ، بندر عباس ، خیابان هتل هما</span>
+            آدرس:<span>هرمزگان ، بندر عباس ،خیابان هتل هما</span>
           </p>
         </li>
         <Link href="#">ویرایش</Link>

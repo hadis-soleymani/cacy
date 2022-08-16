@@ -16,12 +16,14 @@
     flex-direction: row-reverse;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
+    text-align: right;
     span {
       color: $light_text;
       padding-right: 0.5rem;
     }
     li p {
-        margin: .5rem;
+      margin: 0.5rem;
     }
   }
   h3 {
@@ -31,6 +33,7 @@
   }
   a {
     color: #19bfd3;
+    margin: 0.5rem;
     @include center;
     &::before {
       font-family: "FontAwesome";
@@ -39,3 +42,11 @@
     }
   }
 }
+
+
+@media (max-width: 768px) {
+    .container {
+     width: 84%;
+    }
+   
+  }
