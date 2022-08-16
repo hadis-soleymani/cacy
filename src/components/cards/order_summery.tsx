@@ -3,7 +3,12 @@ import Button from "../shared/button";
 import styles from "../../styles/order_summery.module.scss";
 import { BiArrowBack } from "react-icons/bi";
 import Link from "next/link";
-const Order_summery = () => {
+
+interface Props{
+  without_btn?:boolean;
+}
+
+const Order_summery :React.FC<Props> = ({without_btn}) => {
   return (
     <div className={styles.container}>
       <table>
@@ -35,9 +40,9 @@ const Order_summery = () => {
           </tr>
         </tbody>
       </table>
-      <Button width="100%" height="fit-content">
+    { !without_btn ? <Button width="100%" height="fit-content">
         <Link href="/screens/payment/payment">تسویه حساب</Link>
-      </Button>
+      </Button> : null}
     </div>
   );
 };

@@ -8,7 +8,7 @@ const Payment = () => {
   return (
     <div className={styles.container}>
       <Show_address_and_info />
-      <Order_summery />
+      <Order_summery without_btn={true}/>
 
       <div className={styles.about_payment}>
       <p>

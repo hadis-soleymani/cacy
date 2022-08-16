@@ -8,14 +8,13 @@
   margin-bottom: 3rem;
 }
 
-.about_payment{
-    font-size: 1rem;
-    text-align: right;
-    width: 70%;
-    margin: 2rem 0;
+.about_payment {
+  font-size: 1rem;
+  text-align: right;
+  width: 70%;
+  margin: 2rem 0;
 }
 .rules_div {
-  
   p {
     display: inline;
   }
@@ -25,8 +24,7 @@
 }
 
 @media (max-width: 768px) {
-    .about_payment {
-     width: 86%;
-    }
-   
+  .about_payment {
+    width: 86%;
   }
+}
