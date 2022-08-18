@@ -4,8 +4,11 @@ import Order_summery from "../../../components/cards/order_summery";
 import Show_address_and_info from "../../../components/cards/show_address_and_info/show_address_and_info";
 import styles from "./payment.module.scss";
 import Button from "../../../components/shared/button";
+import Navbar from "../../../components/shared/navbar";
 const Payment = () => {
   return (
+    <>
+    <Navbar/>
     <div className={styles.container}>
       <Show_address_and_info />
       <Order_summery without_btn={true}/>
@@ -26,6 +29,7 @@ const Payment = () => {
         <Link href="/screens/payment/payment">تسویه حساب</Link>
       </Button>
     </div>
+    </>
   );
 };
 

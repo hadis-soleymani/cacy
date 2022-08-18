@@ -41,7 +41,7 @@ const Order_summery :React.FC<Props> = ({without_btn}) => {
         </tbody>
       </table>
     { !without_btn ? <Button width="100%" height="fit-content">
-        <Link href="/screens/payment/payment">تسویه حساب</Link>
+        <Link href="/screens/identity_information/identity_information">تسویه حساب</Link>
       </Button> : null}
     </div>
   );

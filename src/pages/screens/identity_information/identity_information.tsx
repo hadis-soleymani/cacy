@@ -58,7 +58,7 @@ const Identity_information = () => {
             />
           </div>
         <Button type="submit" width="90%" height="fit-content">
-          افزودن اطلاعات هویتی
+        <Link href="/screens/address_form/address_form"> افزودن اطلاعات هویتی</Link>
         </Button>
       </form>
     </div>

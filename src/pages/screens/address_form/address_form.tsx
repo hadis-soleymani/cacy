@@ -81,7 +81,7 @@ const Address_form = () => {
           />
         </div>
         <Button type="submit" width="90%" height="fit-content">
-          افزودن آدرس
+        <Link href="/screens/payment/payment"> افزودن آدرس</Link>
         </Button>
       </form>
     </div>

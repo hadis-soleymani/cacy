@@ -51,11 +51,8 @@ const Sign_in = () => {
         />
 
         <Button type="submit" width="100%" height="fit-content">
-          ورود
+          <Link href="/authentication/verify_email"> ورود</Link>
         </Button>
-        <p>
-          <Link href="/authentication/verify_email">ثبت نام</Link>
-        </p>
       </form>
     </Auth_Layout>
   );

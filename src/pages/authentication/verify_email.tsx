@@ -51,17 +51,13 @@ const Verify_email = () => {
         />
 
         <Button type="submit" width="100%" height="fit-content">
-          ورود
+          <Link href="/screens/landingpage">
+            ورود
+          </Link>
         </Button>
-        <p>
-          <Link href="/screens/identity_information/identity_information">ثبت نام</Link>
-        </p>
       </form>
     </Auth_Layout>
   );
 };
 
 export default Verify_email;
-
-
-
