@@ -30,7 +30,7 @@ const Show_address_and_info = () => {
               آدرس:<span>هرمزگان ، بندر عباس ،خیابان هتل هما</span>
             </p>
           </li>
-          <Link href="#">ویرایش</Link>
+          <Link href="/screens/edit_information/edit_information">ویرایش</Link>
         </ul>
       </div>
       <h2 className={styles.add_adress}>افزودن آدرس جدید</h2>
