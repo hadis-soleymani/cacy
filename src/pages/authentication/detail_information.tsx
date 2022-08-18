@@ -5,12 +5,11 @@ import { useFormik } from "formik";
 import styles from "../../styles/auth.module.scss";
 import Auth_Layout from "./auth_layout";
 
-//icons
-import { HiOutlineMailOpen } from "react-icons/hi";
 import Button from "../../components/shared/button";
 import validate from "../../components/helper/validation";
 import My_popup from "../../components/shared/my_popup";
 import Dropdown from "../../components/shared/dropdown/dropdown";
+import Input from "../../components/shared/input/input";
 
 interface MyFormValues {
   state: string;
@@ -54,64 +53,42 @@ const Detail_information = () => {
           name={"state"}
           value={formik.values.state}
           onChange={formik.setFieldValue}
+          error={formik.errors.state}
         />
-        {formik.errors.state ? (
-          <div className={styles.error}>{formik.errors.state}</div>
-        ) : null}
 
         <Dropdown
           options={[{ value: "Bandar Abbas", label: "بندرعباس" }]}
           name={"city"}
           value={formik.values.city}
           onChange={formik.setFieldValue}
+          error={formik.errors.city}
         />
-        {formik.errors.city ? (
-          <div className={styles.error}>{formik.errors.city}</div>
-        ) : null}
-        <div className={styles.icon_inside}>
-          <input
-            className={styles.input}
-            placeholder="کد پستی خود را وارد نمایید"
-            id="postal_code"
-            name="postal_code"
-            type="postal_code"
-            onChange={formik.handleChange}
-            value={formik.values.postal_code}
-          />
-          <HiOutlineMailOpen size={20} />
-        </div>
-        {formik.errors.postal_code ? (
-          <div className={styles.error}>{formik.errors.postal_code}</div>
-        ) : null}
-        <div className={styles.icon_inside}>
-          <textarea
-            className={styles.textarea}
-            placeholder="آدرس خود را وارد نمایید"
-            id="address"
-            name="address"
-            onChange={formik.handleChange}
-            value={formik.values.address}
-          />
-          <HiOutlineMailOpen size={20} />
-        </div>
-        {formik.errors.address ? (
-          <div className={styles.error}>{formik.errors.address}</div>
-        ) : null}
 
-        <div className={styles.icon_inside}>
-          <textarea
-            className={styles.textarea}
-            placeholder="توضیحات تکمیلی خود را وارد نمایید(اختیاری)"
-            id="detail"
-            name="detail"
-            onChange={formik.handleChange}
-            value={formik.values.detail}
-          />
-          <HiOutlineMailOpen size={20} />
-        </div>
-        {formik.errors.detail ? (
-          <div className={styles.error}>{formik.errors.detail}</div>
-        ) : null}
+        <Input
+          placeholder="کد پستی خود را وارد نمایید"
+          onChange={formik.handleChange}
+          value={formik.values.postal_code}
+          name="postal_code"
+          error={formik.errors.postal_code}
+        />
+        <Input
+          textarea={true}
+          placeholder="آدرس خود را وارد نمایید"
+          onChange={formik.handleChange}
+          value={formik.values.address}
+          name="address"
+          error={formik.errors.address}
+        />
+
+        <Input
+          textarea={true}
+          placeholder="توضیحات تکمیلی خود را وارد نمایید(اختیاری)"
+          onChange={formik.handleChange}
+          value={formik.values.detail}
+          name="detail"
+          error={formik.errors.detail}
+        />
+
         <Button type="submit" width="100%" height="fit-content">
           تکمیل خرید
         </Button>

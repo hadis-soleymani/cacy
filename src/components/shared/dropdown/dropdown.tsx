@@ -1,12 +1,14 @@
 import React from "react";
 import Select, { StylesConfig } from "react-select";
 import AsyncSelect from "react-select/async";
+import styles from "./dropdown.module.scss";
 
 interface Props {
   options: { value: string; label: string }[];
   value?: string;
   onChange?: (name: string, value: string) => void;
   name?: string;
+  error?: string;
 }
 //const options = [{ value: "Hormuzgan", label: "هرمزگان" }];
 const colourStyles: StylesConfig = {
@@ -35,7 +37,7 @@ const colourStyles: StylesConfig = {
   },
 };
 
-const Dropdown: React.FC<Props> = ({ options, onChange, name }) => {
+const Dropdown: React.FC<Props> = ({ options, onChange, name, error }) => {
   const handleChange = (value: string) => {
     // this is going to call setFieldValue and manually update values.topcis
     onChange(name, value);
@@ -59,6 +61,7 @@ const Dropdown: React.FC<Props> = ({ options, onChange, name }) => {
         defaultOptions //for show options without search
         onChange={handleChange}
       />
+      {error ? <div className={styles.error}>{error}</div> : null}
     </div>
   );
 };
