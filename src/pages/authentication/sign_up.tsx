@@ -67,7 +67,7 @@ const Sign_up = () => {
           ثبت نام
         </Button>
         <p>
-          <Link href="/authentication/detail_information"> ورود</Link>
+          <Link href="/authentication/address_form"> ورود</Link>
         </p>
       </form>
     </Auth_Layout>

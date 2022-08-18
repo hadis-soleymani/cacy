@@ -18,7 +18,7 @@ interface MyFormValues {
   address: string;
   detail: string;
 }
-const Detail_information = () => {
+const Address_form = () => {
   //popup controller state
   const [open, setOpen] = useState(false);
   const formik = useFormik<MyFormValues>({
@@ -100,4 +100,4 @@ const Detail_information = () => {
   );
 };
 
-export default Detail_information;
+export default Address_form;
