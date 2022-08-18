@@ -5,11 +5,10 @@ import { useFormik } from "formik";
 import styles from "../../styles/auth.module.scss";
 import Auth_Layout from "./auth_layout";
 
-//icons
-import { HiOutlineMailOpen } from "react-icons/hi";
 import Button from "../../components/shared/button";
 import validate from "../../components/helper/validation";
 import My_popup from "../../components/shared/my_popup";
+import Input from "../../components/shared/input/input";
 
 interface MyFormValues {
   firstName: string;
@@ -42,52 +41,28 @@ const Sign_up = () => {
 
       <form className={styles.form_container} onSubmit={formik.handleSubmit}>
         <h1 className={styles.title}>فروشگاه کاکی</h1>
+        <Input
+          placeholder="نام خود را وارد نمایید"
+          onChange={formik.handleChange}
+          value={formik.values.firstName}
+          name="firstName"
+          error={formik.errors.firstName}
+        />
+        <Input
+          placeholder="نام خانوادگی خود را وارد نمایید"
+          onChange={formik.handleChange}
+          value={formik.values.lastName}
+          name="lastName"
+          error={formik.errors.lastName}
+        />
+        <Input
+          placeholder="شماره تلفن خود را وارد نمایید"
+          onChange={formik.handleChange}
+          value={formik.values.phoneNumber}
+          name="phoneNumber"
+          error={formik.errors.phoneNumber}
+        />
 
-        <div className={styles.icon_inside}>
-          <input
-            className={styles.input}
-            placeholder="نام خود را وارد نمایید"
-            id="firstName"
-            name="firstName"
-            type="firstName"
-            onChange={formik.handleChange}
-            value={formik.values.firstName}
-          />
-          <HiOutlineMailOpen size={20} />
-        </div>
-        {formik.errors.firstName ? (
-          <div className={styles.error}>{formik.errors.firstName}</div>
-        ) : null}
-        <div className={styles.icon_inside}>
-          <input
-            className={styles.input}
-            placeholder="نام خانوادگی خود را وارد نمایید"
-            id="lastName"
-            name="lastName"
-            type="lastName"
-            onChange={formik.handleChange}
-            value={formik.values.lastName}
-          />
-          <HiOutlineMailOpen size={20} />
-        </div>
-        {formik.errors.lastName ? (
-          <div className={styles.error}>{formik.errors.lastName}</div>
-        ) : null}
-        <div className={styles.icon_inside}>
-          <input
-            className={styles.input}
-            placeholder="شماره تلفن خود را وارد نمایید"
-            id="phoneNumber"
-            name="phoneNumber"
-            type="phoneNumber"
-            onChange={formik.handleChange}
-            value={formik.values.phoneNumber}
-          />
-          <HiOutlineMailOpen size={20} />
-        </div>
-        {formik.errors.phoneNumber ? (
-          <div className={styles.error}>{formik.errors.phoneNumber}</div>
-        ) : null}
         <Button type="submit" width="100%" height="fit-content">
           ثبت نام
         </Button>
