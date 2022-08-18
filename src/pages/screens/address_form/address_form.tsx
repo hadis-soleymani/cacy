@@ -36,7 +36,7 @@ const Address_form = () => {
     <div className={styles.container}>
       <form className={styles.form_container}>
         <h1 className={styles.title}>فروشگاه کاکی</h1>
-        <h3>افزودن آدرس</h3>
+        <h3>افزودن آدرس <span>*</span> </h3>
         <div className={styles.inputs_container}>
           <Dropdown
             options={[{ value: "Hormuzgan", label: "هرمزگان" }]}

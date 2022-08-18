@@ -8,6 +8,7 @@ $pink: rgb(247, 237, 238);
 $product_bg: rgb(243, 243, 243);
 $footer_bg: #f3f3f3;
 $light_text: #797979;
+$red:#f14156b3;
 
 :export {
   green: $green;
@@ -18,4 +19,5 @@ $light_text: #797979;
   product_bg: $product_bg;
   footer_bg: $footer_bg;
   light_text: $light_text;
+  red:$red;
 }

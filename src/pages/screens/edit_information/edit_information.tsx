@@ -42,7 +42,7 @@ const Edit_information = () => {
       <div className={styles.container}>
         <form className={styles.form_container}>
           <h1 className={styles.title}>فروشگاه کاکی</h1>
-          <h3>ویرایش اطلاعات هویتی</h3>
+          <h3>ویرایش اطلاعات هویتی <span>*</span></h3>
 
           <div className={styles.inputs_container}>
             <Input
@@ -68,7 +68,7 @@ const Edit_information = () => {
             />
           </div>
 
-          <h3>ویرایش آدرس</h3>
+          <h3>ویرایش آدرس <span>*</span></h3>
 
           <div className={styles.inputs_container}>
             <Dropdown
@@ -114,7 +114,7 @@ const Edit_information = () => {
             />
           </div>
           <Button type="submit" width="90%" height="fit-content">
-            ذخیره ی تغییرات
+          <Link href="/screens/payment/payment"> ذخیره ی تغییرات</Link>
           </Button>
         </form>
       </div>

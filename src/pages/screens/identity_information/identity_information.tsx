@@ -32,7 +32,7 @@ const Identity_information = () => {
     <div className={styles.container}>
       <form className={styles.form_container}>
         <h1 className={styles.title}>فروشگاه کاکی</h1>
-        <h3> اطلاعات هویتی</h3>
+        <h3> اطلاعات هویتی <span>*</span></h3>
 
           <div className={styles.inputs_container}>
             <Input
