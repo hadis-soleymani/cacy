@@ -1,0 +1,65 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixin";
+
+.container {
+  @include border_box;
+  width: 70%;
+  margin: 2rem auto 2rem auto;
+  padding-bottom: 2rem;
+}
+.form_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+
+  p {
+    color: $green;
+    text-align: right;
+    width: 100%;
+    font-size: 1.1rem;
+    padding-top: 1rem;
+  }
+
+  h3 {
+    width: 90%;
+    text-align: right;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: $dark_text;
+  }
+}
+
+.title {
+  color: $green;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.inputs_container {
+  width: 90%;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 50px;
+  direction: rtl;
+  padding-bottom: .5rem;
+}
+
+//responsive all products in mobile size
+@media (max-width: 768px) {
+  .container {
+    width: 86%;
+    border:none;
+  }
+  .inputs_container {
+    grid-template-columns: auto ;
+  }
+}
+
+//responsive in tablet size
+@media (max-width: 1000px) and (min-width: 768px) {
+  .container {
+    width: 86%;
+    
+  }
+
+}
