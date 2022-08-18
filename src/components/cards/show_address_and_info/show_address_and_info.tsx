@@ -33,7 +33,9 @@ const Show_address_and_info = () => {
           <Link href="/screens/edit_information/edit_information">ویرایش</Link>
         </ul>
       </div>
-      <h2 className={styles.add_adress}>افزودن آدرس جدید</h2>
+      <h2 className={styles.add_adress}>
+        <Link href="/screens/address_form/address_form">افزودن آدرس جدید</Link>{" "}
+      </h2>
     </>
   );
 };

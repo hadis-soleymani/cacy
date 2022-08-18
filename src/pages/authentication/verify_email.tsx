@@ -54,7 +54,7 @@ const Verify_email = () => {
           ورود
         </Button>
         <p>
-          <Link href="/authentication/sign_up">ثبت نام</Link>
+          <Link href="/screens/identity_information/identity_information">ثبت نام</Link>
         </p>
       </form>
     </Auth_Layout>

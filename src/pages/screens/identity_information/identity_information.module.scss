@@ -9,13 +9,6 @@
   @include border_box;
   width: 70%;
   padding-bottom: 2rem;
-  margin: 2rem 0;
-}
-.form_container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
   h3 {
     width: 90%;
     text-align: right;
@@ -24,10 +17,17 @@
     color: $dark_text;
   }
 }
+.form_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
 
 .title {
   color: $green;
   font-size: 1.8rem;
+  margin-bottom: 4rem;
 }
 .inputs_container {
   width: 90%;

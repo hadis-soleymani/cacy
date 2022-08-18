@@ -38,84 +38,86 @@ const Edit_information = () => {
     },
   });
   return (
-    <div className={styles.container}>
-      <form className={styles.form_container}>
-        <h1 className={styles.title}>فروشگاه کاکی</h1>
-        <h3>ویرایش اطلاعات هویتی</h3>
+    <div className={styles.full_container}>
+      <div className={styles.container}>
+        <form className={styles.form_container}>
+          <h1 className={styles.title}>فروشگاه کاکی</h1>
+          <h3>ویرایش اطلاعات هویتی</h3>
 
-        <div className={styles.inputs_container}>
-          <Input
-            placeholder="نام خود را وارد نمایید"
-            onChange={formik.handleChange}
-            value={formik.values.firstName}
-            name="firstName"
-            error={formik.errors.firstName}
-          />
-          <Input
-            placeholder="نام خانوادگی خود را وارد نمایید"
-            onChange={formik.handleChange}
-            value={formik.values.lastName}
-            name="lastName"
-            error={formik.errors.lastName}
-          />
-          <Input
-            placeholder="شماره تلفن خود را وارد نمایید"
-            onChange={formik.handleChange}
-            value={formik.values.phoneNumber}
-            name="phoneNumber"
-            error={formik.errors.phoneNumber}
-          />
-        </div>
+          <div className={styles.inputs_container}>
+            <Input
+              placeholder="نام خود را وارد نمایید"
+              onChange={formik.handleChange}
+              value={formik.values.firstName}
+              name="firstName"
+              error={formik.errors.firstName}
+            />
+            <Input
+              placeholder="نام خانوادگی خود را وارد نمایید"
+              onChange={formik.handleChange}
+              value={formik.values.lastName}
+              name="lastName"
+              error={formik.errors.lastName}
+            />
+            <Input
+              placeholder="شماره تلفن خود را وارد نمایید"
+              onChange={formik.handleChange}
+              value={formik.values.phoneNumber}
+              name="phoneNumber"
+              error={formik.errors.phoneNumber}
+            />
+          </div>
 
-        <h3>ویرایش آدرس</h3>
+          <h3>ویرایش آدرس</h3>
 
-        <div className={styles.inputs_container}>
-          <Dropdown
-            options={[{ value: "Hormuzgan", label: "هرمزگان" }]}
-            name={"state"}
-            value={formik.values.state}
-            onChange={formik.setFieldValue}
-            error={formik.errors.state}
-          />
+          <div className={styles.inputs_container}>
+            <Dropdown
+              options={[{ value: "Hormuzgan", label: "هرمزگان" }]}
+              name={"state"}
+              value={formik.values.state}
+              onChange={formik.setFieldValue}
+              error={formik.errors.state}
+            />
 
-          <Dropdown
-            options={[{ value: "Bandar Abbas", label: "بندرعباس" }]}
-            name={"city"}
-            value={formik.values.city}
-            onChange={formik.setFieldValue}
-            error={formik.errors.city}
-          />
+            <Dropdown
+              options={[{ value: "Bandar Abbas", label: "بندرعباس" }]}
+              name={"city"}
+              value={formik.values.city}
+              onChange={formik.setFieldValue}
+              error={formik.errors.city}
+            />
 
-          <Input
-            placeholder="کد پستی خود را وارد نمایید"
-            onChange={formik.handleChange}
-            value={formik.values.postal_code}
-            name="postal_code"
-            error={formik.errors.postal_code}
-          />
-          <br />
-          <Input
-            textarea={true}
-            placeholder="آدرس خود را وارد نمایید"
-            onChange={formik.handleChange}
-            value={formik.values.address}
-            name="address"
-            error={formik.errors.address}
-          />
+            <Input
+              placeholder="کد پستی خود را وارد نمایید"
+              onChange={formik.handleChange}
+              value={formik.values.postal_code}
+              name="postal_code"
+              error={formik.errors.postal_code}
+            />
+            <br />
+            <Input
+              textarea={true}
+              placeholder="آدرس خود را وارد نمایید"
+              onChange={formik.handleChange}
+              value={formik.values.address}
+              name="address"
+              error={formik.errors.address}
+            />
 
-          <Input
-            textarea={true}
-            placeholder="توضیحات تکمیلی خود را وارد نمایید(اختیاری)"
-            onChange={formik.handleChange}
-            value={formik.values.detail}
-            name="detail"
-            error={formik.errors.detail}
-          />
-        </div>
-        <Button type="submit" width="90%" height="fit-content">
-          ذخیره ی تغییرات
-        </Button>
-      </form>
+            <Input
+              textarea={true}
+              placeholder="توضیحات تکمیلی خود را وارد نمایید(اختیاری)"
+              onChange={formik.handleChange}
+              value={formik.values.detail}
+              name="detail"
+              error={formik.errors.detail}
+            />
+          </div>
+          <Button type="submit" width="90%" height="fit-content">
+            ذخیره ی تغییرات
+          </Button>
+        </form>
+      </div>
     </div>
   );
 };
