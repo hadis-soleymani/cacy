@@ -12,14 +12,14 @@ import validate from "../../components/helper/validation";
 import Input from "../../components/shared/input/input";
 
 interface MyFormValues {
-  email: string;
+  verify_code: string;
 }
-const Sign_in = () => {
+const Verify_email = () => {
   //popup controller state
   const [open, setOpen] = useState<boolean>(false);
   const formik = useFormik<MyFormValues>({
     initialValues: {
-      email: "",
+      verify_code: "",
     },
     validate,
     onSubmit: (values) => {
@@ -43,22 +43,25 @@ const Sign_in = () => {
         <h1 className={styles.title}>فروشگاه کاکی</h1>
 
         <Input
-          placeholder="ایمیل خود را وارد نمایید"
+          placeholder="کد ارسال شده به ایمیل خود را وارد نمایید"
           onChange={formik.handleChange}
-          value={formik.values.email}
-          name="email"
-          error={formik.errors.email}
+          value={formik.values.verify_code}
+          name="verify_code"
+          error={formik.errors.verify_code}
         />
 
         <Button type="submit" width="100%" height="fit-content">
           ورود
         </Button>
         <p>
-          <Link href="/authentication/verify_email">ثبت نام</Link>
+          <Link href="/authentication/sign_up">ثبت نام</Link>
         </p>
       </form>
     </Auth_Layout>
   );
 };
 
-export default Sign_in;
+export default Verify_email;
+
+
+

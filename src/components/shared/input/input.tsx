@@ -1,10 +1,16 @@
 import React from "react";
+
+//styles
 import styles from "./input.module.scss";
+
+//icons
 import { HiOutlineMailOpen } from "react-icons/hi";
-import { AiOutlinePhone } from "react-icons/ai";
+import { AiOutlinePhone, AiOutlineHome } from "react-icons/ai";
 import { FiUser } from "react-icons/fi";
 import { BsSignpost } from "react-icons/bs";
+import { BiDetail } from "react-icons/bi";
 
+//props interface
 interface Props {
   name?: string;
   onChange?: any;
@@ -46,8 +52,14 @@ const Input: React.FC<Props> = ({
           />
         )}
 
+        {/* choos icon by name    */}
+
         {name === "phoneNumber" ? (
           <AiOutlinePhone size={20} />
+        ) : name === "address" ? (
+          <AiOutlineHome size={20} />
+        ) : name === "detail" ? (
+          <BiDetail size={20} />
         ) : name === "postal_code" ? (
           <BsSignpost size={20} />
         ) : name === "email" ? (

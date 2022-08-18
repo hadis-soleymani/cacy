@@ -8,6 +8,7 @@ interface MyFormValues {
   postal_code?: string;
   address?: string;
   detail?: string;
+  verify_code?:string;
 }
 
 const validate = (values: MyFormValues) => {
@@ -43,6 +44,12 @@ const validate = (values: MyFormValues) => {
     errors.phoneNumber = "این فیلد الزامی است";
   } else if (values.phoneNumber.length < 10 || values.phoneNumber.length > 11) {
     errors.phoneNumber = "شماره تلفن وارد شده معتبر نیست";
+  }
+
+  if (!values.verify_code) {
+    errors.verify_code = "این فیلد الزامی است";
+  } else if (values.verify_code.length < 10 || values.verify_code.length > 11) {
+    errors.verify_code = "کد وارد شده معتبر نیست";
   }
 
   if (!values.lastName) {
